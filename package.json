@@ -1,0 +1,8 @@
+{
+"name":"up",
+"main":"up.html",
+"window" : {
+     "title" : "up"
+}  ,
+"js-flags": "--harmony"
+}
