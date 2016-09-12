@@ -15,6 +15,7 @@ cursor: context-menu
 <script src="jquery.js"></script>
 <script src="htm.js"></script>
 <script>
+htm(function(htl){
      htm.contain(document , {
                         ty: "|" , 
                         all:[
@@ -33,6 +34,7 @@ cursor: context-menu
                               }
                             ]
              }).css({textAlign : "center" ,  font: "6em/" + htm(window).height() + "px htm"})
-location="" 
+location.href.match(/\?/) ? "" : location = location +   "?"
+})
 </script>
 </html>

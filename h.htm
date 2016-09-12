@@ -27,9 +27,8 @@ htm(function(htl){
                                  css: {color: "lime"  ,background: "violet"}
                               }
                             }
-             }).css({textAlign : "center" ,  font: "6em/" + htm(window).height()/2 + "px htm"})
-}
-)
-location="" 
+                }).css({textAlign : "center" ,  font: "6em/" + htm(window).height()/2 + "px htm"})
+location.href.match(/\?/) ? "" : location = location +   "?"
+})
 </script>
 </html>
