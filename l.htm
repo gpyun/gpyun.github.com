@@ -1,0 +1,38 @@
+﻿<!doctype html >
+<html>
+<meta content="text/html; charset= utf8" http-equiv="content-type" >
+<style>
+html{
+color: #99AAFF;
+background-color: #6f6f9f;
+cursor: context-menu
+}
+</style>
+
+<title> htm </title>
+<p></p>
+
+<script src="jquery.js"></script>
+<script src="htm.js"></script>
+<script>
+     htm.contain(document , {
+                        ty: "|" , 
+                        all:[
+                            {
+                                 pn: 2,
+                                 html: "hello" ,
+                                 css: {color: "violet"  ,background: "lime"}
+                              } ,
+                             {
+                                 pn:3 ,
+                                 text: "htm" ,
+                                 css: {color: "lime"  ,background: "violet"}
+                              } ,
+                             {
+                                 pn:1
+                              }
+                            ]
+             }).css({textAlign : "center" ,  font: "6em/" + htm(window).height() + "px htm"})
+) 
+</script>
+</html>
