@@ -2,8 +2,8 @@
 <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-\<script src="jquery.js"&gt;&lt/script&gt;
-&lt;script src="gpyun.js"&gt;&lt/script&gt;
+\<script src="jquery.js"&gt;\</script&gt;
+&lt;script src="gpyun.js"&gt;\</script&gt;
 &lt;script&gt;
 .........
 &lt;/script&gt;
