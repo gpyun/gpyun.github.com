@@ -1,11 +1,11 @@
 <h2>how</h2>
 <pre>
 &lt;!DOCTYPE html&gt;
-&lt;html&gt;
-\<script src="jquery.js"&gt;\</script&gt;
-&lt;script src="gpyun.js"&gt;\</script&gt;
-&lt;script&gt;
+\<html\>;
+\<script src="jquery.js"\>\</script\>
+\<script src="gpyun.js"\>\</script\>
+\<script\>
 .........
-&lt;/script&gt;
+\<script\>
 &lt;/html&gt;
-&lt;/pre&gt;
+</pre>
