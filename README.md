@@ -12,9 +12,9 @@
 
 <h3>More...</h3>
 
-<h6>htm.contain(element , option)</h6>
-  element: HTMLElement or Jquery element
-  <p>option : { }</p>
+htm.contain(element , option)
+<h6>element: HTMLElement or Jquery element</h6>
+<h6>option : { }</h6>
 <pre>
 var htl=htm.contain(document , {
          all:{
@@ -74,4 +74,4 @@ htm.contain(document , {
             ]
 }).css({textAlign : "center" ,  font: "6em/" + htm(window).height() + "px htm"})
 </pre>
-link:  <a href= "h.htm"> http://gpyun.github.io/h.htm </a>
+link:  <a href= "l.htm"> http://gpyun.github.io/l.htm </a>
