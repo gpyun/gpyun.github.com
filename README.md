@@ -1,9 +1,9 @@
-<h2>how</h2>
+﻿<h3> How </h3>
 <pre>
-&lt;!DOCTYPE html&gt;
+&lt;!doctype html&gt;
 &lt;html&gt;
 &lt;script src="jquery.js"&gt;&lt;/script&gt;
-&lt;script src="gpyun.js"&gt;</script&gt;
+&lt;script src="gpyun.js"&gt;&lt;/script&gt;
 &lt;script&gt;
 .........
 &lt;/script&gt;
