@@ -10,4 +10,20 @@
 &lt;/html&gt;
 </pre>
 <h3>More...</h3>
-<a href="http://gpyun.github.io">http://gpyun.github.io</a>
+
+
+<pre>
+      htm.contain(document , {
+             all:{
+                 a: {
+                     html: "hello" ,
+                     css: {color: "violet"  ,background: "lime"}
+                  } ,
+                 aa:{
+                     text: "htm" ,
+                     css: {color: "lime"  ,background: "violet"}
+                  }
+            }
+      }).css({textAlign : "center" ,  font: "6em/" + htm(window).height()/2 + "px htm"})
+</pre>
+link:  <a href= "h.htm"> http://gpyun.github.io/h.htm </a>
