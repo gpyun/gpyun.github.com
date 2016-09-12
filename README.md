@@ -1,4 +1,5 @@
-how
+<h2>how</h2>
+<pre>
 <!DOCTYPE html>
 <html>
 <script src="jquery.js"></script>
@@ -7,3 +8,4 @@ how
 .........
 </script>
 </html>
+</pre>
