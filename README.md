@@ -53,7 +53,7 @@ var htl=htm.contain(document , {
 
 var h = [htl.contain[0].clientHeight , htl.contain[1].clientHeight , htl.contain[2].clientHeight ]
 console.log(h[1])                       // 200
-console.log(h[0].clientHeight / h[2])   // = 1 : 1.5
+console.log(h[0]/ h[2])                 // = 1 : 1.5
 console.log(h[0] + h[1] +h[2])          // = htm(window).height() - 2px , [ h[0] , "o" Object , h[1] , "o" Object , h[2]] , two "o" Object : total 2px
 </pre>
 link:  <a href= "p.htm"> http://gpyun.github.io/p.htm </a>
