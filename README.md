@@ -14,10 +14,10 @@
 
 htm.contain(element , option)
 <h6>element: HTMLElement or Jquery element</h6>
-<h6><li>option : {</li>
+<h6>option : {
 <li>           ty: "|" (Horizontal) or other value (Vertical) </li>
 <li>          <lime> all: </lime> Array or Object</li>
-<li>          } </li> </h6>
+            } </h6>
 <pre>
 var htl=htm.contain(document , {
          all:{
