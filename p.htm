@@ -7,17 +7,17 @@ color: #99AAFF;
 background: lime
 }
 </style>
+
 <title> htm </title>
-<p></p>
+
 <script src="jquery.js"></script>
-<script src="htm.js"></script>
 <script>
-htm(function(htl){ 
-            htl=htm.contain(document , {
+htm =  ($)
+htm.getScript("htm.js" , function(){
+          var htl=htm.contain(document , {
                         all: [ 1 , "200px" , 1.5] ,
                         o : 1   //1px
-                })
-//location.href.match(/\?/) ? "" : location = location +   "?"
+              })
 })
 </script>
 </html>
