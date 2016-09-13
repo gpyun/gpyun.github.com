@@ -70,28 +70,26 @@ htm.contain(document , {
               } ,
              {
                  pn:2 ,
-                 text: "hello" ,
-                 css: {color: "lime"  ,background: "violet"}
+                 html: "<a href='https://github.com/gpyun'>https://github.com/gpyun</a>" ,
+                 css: {textAlign : "center" , background:"violet"}
               } ,
              {
                  pn:3
               }
             ]
-}).css({textAlign : "center" ,  font: "6em/" + htm(window).height() + "px htm"})
-
+    })
 or
-
 htm.contain(document , {
         ty: "|" , 
         all:[
               1 ,
               {
                  pn:2 ,
-                 text: "hello" ,
-                 css: {color: "lime"  ,background: "violet"}
-               } ,
+                 html: "<a href='https://github.com/gpyun'>https://github.com/gpyun</a>" ,
+                 css: {textAlign : "center" , background:"violet"}
+               },
               3
             ]
-}).css({textAlign : "center" ,  font: "6em/" + htm(window).height() + "px htm"})
+})
 </pre>
 link:  <a href= "l.htm"> http://gpyun.github.io/l.htm </a>

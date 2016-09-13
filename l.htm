@@ -15,21 +15,21 @@ background-color: #6f6f9f;
 location.href.match(/\?/) ? "" : location = location + "?" + performance.now()
 htm(function(htl){
      htm.contain(document , {
-                        ty: "|" , 
-                        all:[
-                             {
-                                 pn: 1,
-                              } ,
-                             {
-                                 pn:2 ,
-                                 text: "hello" ,
-                                 css: {color: "lime"  ,background: "violet"}
-                              } ,
-                             {
-                                 pn:3
-                              }
-                            ]
-             }).css({textAlign : "center" ,  font: "6em/" + htm(window).height() + "px htm"})
+        ty: "|" , 
+        all:[
+             {
+                 pn: 1,
+              } ,
+             {
+                 pn:2 ,
+                 html: "<a href='https://github.com/gpyun'>https://github.com/gpyun</a>" ,
+                 css: {textAlign : "center" , background:"violet"}
+              } ,
+             {
+                 pn:3
+              }
+            ]
+    })
 })
 
 </script>
