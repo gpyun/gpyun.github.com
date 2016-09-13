@@ -19,7 +19,11 @@ htm.contain(element , option)
 <li>           all: Array or Object value</li>
 <li>           o:   Integer or Object value , represent thickness (like &lt;hr&gt; tag element) </li>   
             } </h6>
+
 <pre>
+
+//"all" option : Object value , (Vertical 1 : 1)
+
 var htl=htm.contain(document , {
          all:{
              a: {
@@ -38,22 +42,23 @@ console.log(htl.aa.textContent) //htm
 
 </pre>
 link:  <a href= "h.htm"> http://gpyun.github.io/h.htm </a>
+
 <pre>
+//"all" option : Array value , "ty" option : "|" (Horizontal 1 : 2 : 3)
+
 htm.contain(document , {
         ty: "|" , 
         all:[
-            {
-                 pn: 2,
-                 html: "hello" ,
-                 css: {color: "violet"  ,background: "lime"}
+             {
+                 pn: 1,
               } ,
              {
-                 pn:3 ,
-                 text: "htm" ,
+                 pn:2 ,
+                 text: "hello" ,
                  css: {color: "lime"  ,background: "violet"}
               } ,
              {
-                 pn:1
+                 pn:3
               }
             ]
 }).css({textAlign : "center" ,  font: "6em/" + htm(window).height() + "px htm"})
@@ -64,17 +69,13 @@ or
 htm.contain(document , {
         ty: "|" , 
         all:[
-            {
-                 pn: 2,
-                 html: "hello" ,
-                 css: {color: "violet"  ,background: "lime"}
-             } ,
-            {
-                 pn:3 ,
+              1 ,
+              {
+                 pn:2 ,
                  text: "htm" ,
                  css: {color: "lime"  ,background: "violet"}
-             } ,
-              1
+               } ,
+              3
             ]
 }).css({textAlign : "center" ,  font: "6em/" + htm(window).height() + "px htm"})
 </pre>
