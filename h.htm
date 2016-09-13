@@ -5,16 +5,14 @@
 html{
 color: #99AAFF;
 background-color: #6f6f9f;
-cursor: context-menu
 }
 </style>
 
 <title> htm </title>
-<p></p>
-
 <script src="jquery.js"></script>
 <script src="htm.js"></script>
 <script>
+location.href.match(/\?/) ? "" : location = location +   "?" + performance.now()
 htm(function(htl){
             htl=htm.contain(document , {
                         all:{
@@ -28,7 +26,6 @@ htm(function(htl){
                               }
                             }
                 }).css({textAlign : "center" ,  font: "6em/" + htm(window).height()/2 + "px htm"})
-location.href.match(/\?/) ? "" : location = location +   "?"
 })
 </script>
 </html>

@@ -87,7 +87,7 @@ htm.contain(document , {
               1 ,
               {
                  pn:2 ,
-                 text: "htm" ,
+                 text: "hello" ,
                  css: {color: "lime"  ,background: "violet"}
                } ,
               3
