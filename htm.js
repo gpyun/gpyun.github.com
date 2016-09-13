@@ -16,7 +16,7 @@ htm.contain = function (htmcontain , p , contain){
   var ty = function (h){
        return  ({}).toString.apply(h).match(/[^ ]*(?=\])/)
   }
-  contain = (htmcontain == window | htmcontain == document) ? htmcontain = htm(document.activeElement).height(2 * htm(window).height()).css("margin" : 0.01 , height: htm(window).height()): htm(htmcontain)
+  contain = (htmcontain == window | htmcontain == document) ? htmcontain = htm(document.activeElement).css({"margin" : 0.01 , height: htm(window).height()}): htm(htmcontain)
   typeof(htmcontain)== "object" ? "" : htmcontain = contain	 
   p= ty(p)== "Object" ?p:{} ;
   var pll,aa,pal= [] ,pan= 0,a={},pn,tp,t,z,h= {},np, tt , ap
