@@ -13,12 +13,12 @@
 <h3>More...</h3>
 
 htm.contain(element , option)
-<h6>element: HTMLElement or Jquery element
-<p>option : {
+<h6>element: HTMLElement or Jquery element</h6>
+<h6>option : {
 <li>           ty: "|" (Horizontal) or other value (Vertical) </li>
 <li>           all: Array or Object value</li>
 <li>           o:   Integer or Object value , represent thickness (like &lt;hr&gt; tag element) </li>   
-            } </p></h6>
+            } </h6>
 
 <pre>
 
@@ -39,9 +39,24 @@ var htl=htm.contain(document , {
 
 console.log(htm(htl.a).html())  //hello , htm(htl.a) === Jquery(htl.a)
 console.log(htl.aa.textContent) //htm
-
 </pre>
 link:  <a href= "h.htm"> http://gpyun.github.io/h.htm </a>
+
+
+<pre>
+//"all" option : Array value , "o" option , (Vertical)
+
+var htl=htm.contain(document , {
+            all: [ 1 , "200px" , 1.5] ,  // or all:[{pn:1} , {pn:"200px"} , {pn:1.5}]
+            o : 1                        //1px ,  
+})
+
+var h = [htl.contain[0].clientHeight , htl.contain[1].clientHeight , htl.contain[2].clientHeight ]
+console.log(h[1])                       // 200
+console.log(h[0].clientHeight / h[2])   // = 1 : 1.5
+console.log(h[0] + h[1] +h[2])          // = htm(window).height() - 2px , [ h[0] , "o" Object , h[1] , "o" Object , h[2]] , two "o" Object : total 2px
+</pre>
+link:  <a href= "p.htm"> http://gpyun.github.io/p.htm </a>
 
 <pre>
 //"all" option : Array value , "ty" option : "|" (Horizontal 1 : 2 : 3)
@@ -62,10 +77,9 @@ htm.contain(document , {
               }
             ]
 }).css({textAlign : "center" ,  font: "6em/" + htm(window).height() + "px htm"})
-</pre>
+
 or
 
-<pre>
 htm.contain(document , {
         ty: "|" , 
         all:[
