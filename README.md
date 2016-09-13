@@ -37,7 +37,7 @@ var htl=htm.contain(document , {
         }
 }).css({textAlign : "center" ,  font: "6em/" + htm(window).height()/2 + "px htm"})
 
-console.log(htm(htl.a).html())  //hello
+console.log(htm(htl.a).html())  //hello , htm(htl.a) === Jquery(htl.a)
 console.log(htl.aa.textContent) //htm
 
 </pre>
