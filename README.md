@@ -13,12 +13,12 @@
 <h3>More...</h3>
 
 htm.contain(element , option)
-<h6>element: HTMLElement or Jquery element</h6>
-<h6>option : {
+<h6>element: HTMLElement or Jquery element
+<p>option : {
 <li>           ty: "|" (Horizontal) or other value (Vertical) </li>
 <li>           all: Array or Object value</li>
 <li>           o:   Integer or Object value , represent thickness (like &lt;hr&gt; tag element) </li>   
-            } </h6>
+            } </p></h6>
 
 <pre>
 
