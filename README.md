@@ -2,7 +2,7 @@
  <pre>
 &lt;!doctype html&gt;
 &lt;html&gt;
-&lt;script src="jquery.js"&gt;&lt;/script&gt;
+&lt;script src="jquery.js"&gt;&lt;/script
 &lt;script src="htm.js"&gt;&lt;/script&gt;
 &lt;script&gt;
 .........
@@ -17,7 +17,7 @@ htm.contain(element , option)
 <h6>option : {
 <li>           ty: "|" (Horizontal) or other value (Vertical) </li>
 <li>           all: Array or Object value</li>
-<li>           o:   Integer or Object value , represent thickness (like <hr> tag element) ,   
+<li>           o:   Integer or Object value , represent thickness (like \<hr\> tag element) ,   
             } </h6>
 <pre>
 var htl=htm.contain(document , {
