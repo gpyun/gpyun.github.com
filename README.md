@@ -17,7 +17,7 @@ htm.contain(element , option)
 <h6>option : {
 <li>           ty: "|" (Horizontal) or other value (Vertical) </li>
 <li>           all: Array or Object value</li>
-<li>           o:   Integer or Object value , represent thickness (like &lt;hr&gt; tag element) ,   
+<li>           o:   Integer or Object value , represent thickness (like &lt;hr&gt; tag element) </li>   
             } </h6>
 <pre>
 var htl=htm.contain(document , {
