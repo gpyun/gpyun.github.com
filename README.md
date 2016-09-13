@@ -3,7 +3,7 @@
 &lt;!doctype html&gt;
 &lt;html&gt;
 &lt;script src="jquery.js"&gt;&lt;/script&gt;
-<lime>&lt;script src="htm.js"&gt;&lt;/script&gt;</lime>
+&lt;script src="htm.js"&gt;&lt;/script&gt;
 &lt;script&gt;
 .........
 &lt;/script&gt;
@@ -14,10 +14,10 @@
 
 htm.contain(element , option)
 <h6>element: HTMLElement or Jquery element</h6>
-<h6>option : {</h6>
-<h6>           ty: "|" (Horizontal) or other value (Vertical)</h6>
-<h6>           all:  Array or Object</h6>
-<h6>          } </h6>
+<h6><li>option : {</li>
+<li>           ty: "|" (Horizontal) or other value (Vertical) </li>
+<li>          <lime> all: </lime> Array or Object</li>
+<li>          } </li> </h6>
 <pre>
 var htl=htm.contain(document , {
          all:{
