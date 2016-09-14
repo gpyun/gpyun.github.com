@@ -18,9 +18,9 @@
 .........
 &lt;/script&gt;
 &lt;/html&gt;
-
-If want to support Hammer.js event , must add : &lt;script src="ham.js"&gt;&lt;/script&gt;   "ham.js" fork from "hammer.js"
 </pre>
+If want to support Hammer.js event , must add "ham.js" (fork from "hammer.js")
+<pre>&lt;script src="ham.js"&gt;&lt;/script&gt;</pre>
 
 h3>More...</h3>
 htm.contain(container element , option)
