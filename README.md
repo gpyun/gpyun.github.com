@@ -15,10 +15,34 @@
 htm.contain(element , option)
 <h6>element: HTMLElement or Jquery element</h6>
 <h6>option : {
-<li>           ty: "|" (Horizontal) or other value (Vertical) </li>
-<li>           all: Array or Object value</li>
-<li>           o:   Integer or Object value , represent thickness (like &lt;hr&gt; tag element) </li>   
-            } </h6>
+<li>            ty: "|" (Horizontal) or other value (Vertical) </li>
+<li>           all:  Array or Object value</li>
+<li>             o: Integer or Object value , represent thickness (like &lt;hr&gt; tag element) </li>   
+            }
+<pre>
+htm.contain(element,{                         
+                     all{
+                         item1:{option...} ,     //item.tagName== "TP" , <tp> element
+                         item2:{option...} ,
+                         .
+                         .
+                         .
+                       }
+                    }
+</pre>
+item option : { 
+<li>pn: number value (>= 0) or px length</li>
+<li>tag: change "<tp>" element to other tag element</li>
+<pre>
+tag: "<p>"
+tag: htm("<a>").css("float","left")
+</pre> 
+<li>contain: call function : htm.contain(item , {...})</li>
+<li> All Jquery method </li> 
+} </h6>
+
+
+
 <pre>
 //"all" option : Object value , (Vertical 1 : 1)
 
