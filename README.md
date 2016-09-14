@@ -172,10 +172,10 @@ var htl = htm.contain(document , {
 link:  <a href= "hl.htm"> http://gpyun.github.io/hl.htm </a>
 <pre>
 <tt>
-//item option : on event
+//item option : on event and method.apply
 // on:{event: function(){...} , another event: function(){...} , ... }
+// method:{apply:[...]} === item.method.apply(item, [...])
 </tt>
-
 var htl=htm.contain(document , {
         all:{
              a: {
