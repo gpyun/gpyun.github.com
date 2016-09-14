@@ -1,4 +1,14 @@
-﻿<h3> How </h3>
+﻿<h3>Feature</h3>
+
+<li> creat HTMLElement </li>
+<li> like css flexbox
+<li> convenient way to refer to an item element in the container element and adjust item percent
+<li> support  jquery method </li>
+<li> support element event (onclick , ontouchstart...) and hammer.js event(tap,pan ...)
+<li> support animation
+
+<h3> How </h3>
+
  <pre>
 &lt;!doctype html&gt;
 &lt;html&gt;
@@ -8,9 +18,12 @@
 .........
 &lt;/script&gt;
 &lt;/html&gt;
+
+If want to support Hammer.js event , must add : &lt;script src="ham.js"&gt;&lt;/script&gt;   "ham.js" fork from "hammer.js"
 </pre>
-<h3>More...</h3>
-htm.contain(element , option)
+
+h3>More...</h3>
+htm.contain(container element , option)
 
 <h6>element: HTMLElement or Jquery element</h6>
 <h6>option : {
@@ -18,14 +31,16 @@ htm.contain(element , option)
 <li>           all:  Array or Object value</li>
 <li>             o: Integer or Object value , represent thickness (like &lt;hr&gt; tag element) </li>   
             }
+
 <pre>
+htm.contain(element,{all:[ num , num , ...]}) //num >= 0
+or
 htm.contain(element,{all:[ item1:{option...} , item2:{option...} , ...]})                        
 or   
-                 
 htm.contain(element,{                         
                      all:{
                          item1:{option...} ,     //item.tagName== "TP" , &lt;tp&gt; element
-                         item2:{option...} ,
+                         item2:{option...} ,    
                          .
                          .
                          .
@@ -40,8 +55,9 @@ tag: "&lt;p&gt;"
 tag: htm("&lt;a&gt;").css("float","left")
 </pre> 
 <li>contain: call function : htm.contain(item , {...})</li>
-<li> All Jquery method </li> } </h6>
-
+<li> All Jquery method </li> 
+<li> on:{event: function(){...} , another event: function(){...} , ... }
+} </h6>
 
 <pre>
 //"all" option : Object value , (Vertical 1 : 1)

@@ -19,7 +19,7 @@ htm.contain = function (htmcontain , p , contain){
   contain = (htmcontain == window | htmcontain == document) ? htmcontain = htm(document.activeElement).css({"margin" : 0.01 , height: htm(window).height()}): htm(htmcontain)
   typeof(htmcontain)== "object" ? "" : htmcontain = contain	 
   p= ty(p)== "Object" ?p:{} ;
-  var pll,aa,pal= [] ,pan= 0,a={},pn,tp,t,z,h= {},np, tt , ap
+  var pll,aa,pal= [] ,pan= 0,a={},pn,tp,t,hl,h= {},np, tt , ap
   p.a = 0
   p.all ="all" in p? p.all: [1,1]
   p.ty=="|"? (np= "height",pn= "width"):(np= "width" , pn= "height")
@@ -35,12 +35,14 @@ htm.contain = function (htmcontain , p , contain){
          }
          tp.css(np,"100%").css("float",  p.aa.float ? p.aa.float : "left")    
          if (ty(p.aa) == "Object") {
-		          for (z in p.aa){
-		                   ("contain" == z | "html" == z | "on" == z) ? "" :  (ty(tp[z]) == "Function" )? tp[z](p.aa[z]) : tp[0][z] = p.aa[z]
+		          for (hl in p.aa){
+		                   ("contain" == hl | "html" == hl | "on" == hl) ? "" : (ty(tp[hl]) == "Function" )? (ty(p.aa[hl].apply) == "Array" ? tp[hl].apply(tp , p.aa[hl].apply) : tp[hl](p.aa[hl])) : tp[0][hl] = p.aa[hl]
 		          }
-		          //console.info(tp , tt)
+		          
 			     if ( "on" in p.aa){
 			       for (t in p.aa.on){
+			     
+			     
 			       	   ("on" + t) in tp[0] ? tp.on(t , p.aa.on[t]) : "ham" in tp? tp.ham().on(t , p.aa.on[t]) : tp.on(t , p.aa.on[t])
 			       }
 			     }    
@@ -77,8 +79,8 @@ htm.contain = function (htmcontain , p , contain){
     t.css({"cursor": "col-resize","text-align":"center","float": "left","background" : "#6f6f9f"})
     t[np]("100%")
    if (ty(p.o) == "Object") {
-          for (z in p.o){
-                (ty(t[z]) == "Function" )? t[z](p.o[z]) : t[z] = p.o[z]
+          for (hl in p.o){
+                (ty(t[hl]) == "Function" )? t[hl](p.o[hl]) : t[hl] = p.o[hl]
 		}
 		pn in p.o? "" : t[pn](1/p.pntotal*100+"%")
    }else{
