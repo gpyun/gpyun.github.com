@@ -157,10 +157,10 @@ var htl = htm.contain(document , {
 link:  <a href= "hl.htm"> http://gpyun.github.io/hl.htm </a>
 
 <pre>
-<h6>
+<tt>
 //item option : on event
 // on:{event: function(){...} , another event: function(){...} , ... }
-</h6>
+</tt>
 
 var htl=htm.contain(document , {
         all:{
@@ -181,7 +181,7 @@ var htl=htm.contain(document , {
              aa:{
                  text: "Not hover" ,
                  css: {color: "green"  ,background: "violet"} ,
-                 hover : {                                         // === htm(htl.aa).hover.apply(htm(htl.aa) , [function(){...} , function(){...}])
+                 hover : {                     //===htm(htl.aa).hover.apply(htm(htl.aa) , [function(){...} , function(){...}])
                                 apply :[
                                         function(){
                                                htl.aa.textContent = "Hover"     
@@ -194,6 +194,5 @@ var htl=htm.contain(document , {
               }
           }
 }).css({textAlign : "center" ,  font: "2em/" + htm(window).height()/2 + "px htm"})
-
 </pre>
 link:  <a href= "hl.htm"> http://gpyun.github.io/pl.htm </a>
