@@ -151,7 +151,49 @@ var htl = htm.contain(document , {
                  css: {color: "green"  ,background: "violet"}
               }
           }
-   }).css({textAlign : "center" ,  font: "6em/" + htm(window).height()/2 + "px htm"})
+   }).css({textAlign : "center" ,  font: "900 6em/" + htm(window).height()/2 + "px htm"})
 
 </pre>
 link:  <a href= "hl.htm"> http://gpyun.github.io/hl.htm </a>
+
+<pre>
+<h6>
+//item option : on event
+// on:{event: function(){...} , another event: function(){...} , ... }
+</h6>
+
+var htl=htm.contain(document , {
+        all:{
+             a: {
+                 html:"click here background color change to pink" ,
+                 on: {
+                      click:function(){
+                                 var htmla = htm(htl.a)
+                                 if(htmla.text().match("pink")){
+                                       htmla.css({color: "green" ,"background" : "pink"}).text("click here background color change to green")
+                                  } else {
+                                       htmla.css({color: "pink","background" : "green"}).text("click here background color change to pink")
+                                  }
+                            }
+                     }
+                 
+              } ,               
+             aa:{
+                 text: "Not hover" ,
+                 css: {color: "green"  ,background: "violet"} ,
+                 hover : {                                         // === htm(htl.aa).hover.apply(htm(htl.aa) , [function(){...} , function(){...}])
+                                apply :[
+                                        function(){
+                                               htl.aa.textContent = "Hover"     
+                                        } ,
+                                        function(){
+                                               htl.aa.textContent = "Not hover"     
+                                        }
+                                       ]
+                             } ,
+              }
+          }
+}).css({textAlign : "center" ,  font: "2em/" + htm(window).height()/2 + "px htm"})
+
+</pre>
+link:  <a href= "hl.htm"> http://gpyun.github.io/pl.htm </a>

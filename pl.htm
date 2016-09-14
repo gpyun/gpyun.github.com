@@ -1,0 +1,51 @@
+﻿<!doctype html >
+<html>
+<meta content="text/html; charset= utf8" http-equiv="content-type" >
+<style>
+html{
+color: pink ;
+background-color:  green
+}
+</style>
+
+<title> htm </title>
+<script src="jquery.js"></script>
+<script src="htm.js"></script>
+<script>
+location.href.match(/\?/) ? "" : location = location +   "?" + performance.now()
+htm(function(){
+            var htl=htm.contain(document , {
+                        all:{
+                             a: {
+                                 html:"click here background color change to pink" ,
+                                 on: {
+                                      click:function(){
+                                                 var htmla = htm(htl.a)
+                                                 if(htmla.text().match("pink")){
+                                                       htmla.css({color: "green" ,"background" : "pink"}).text("click here background color change to green")
+                                                  } else {
+                                                       htmla.css({color: "pink","background" : "green"}).text("click here background color change to pink")
+                                                  }
+                                            }
+                                     }
+                                 
+                              } ,
+                             aa:{
+                                 text: "Not hover" ,
+                                 css: {color: "green"  ,background: "violet"} ,
+                                 hover : {
+                                                apply :[
+                                                        function(){
+                                                               htl.aa.textContent = "Hover"     
+                                                        } ,
+                                                        function(){
+                                                               htl.aa.textContent = "Not hover"     
+                                                        }
+                                                       ]
+                                             } ,
+                              }
+                            }
+                }).css({textAlign : "center" ,  font: "2em/" + htm(window).height()/2 + "px htm"})
+})
+</script>
+</html>
