@@ -19,10 +19,9 @@ htm.contain(element , option)
 <li>           all: Array or Object value</li>
 <li>           o:   Integer or Object value , represent thickness (like &lt;hr&gt; tag element) </li>   
             } </h6>
-<p>
-"all" option : Object value , (Vertical 1 : 1)
-
 <pre>
+//"all" option : Object value , (Vertical 1 : 1)
+
 var htl=htm.contain(document , {
          all:{
              a: {
@@ -40,12 +39,10 @@ console.log(htm(htl.a).html())  //hello , htm(htl.a) === Jquery(htl.a)
 console.log(htl.aa.textContent) //htm
 </pre>
 link:  <a href= "h.htm"> http://gpyun.github.io/h.htm </a>
-</p>
-
-
-<p>
-"all" option : Array value , "o" option , (Vertical)
 <pre>
+//"all" option : Array value , "o" option , (Vertical)
+
+
 var htl=htm.contain(document , {
             all: [ 1 , "200px" , 1.5] ,  // or all:[{pn:1} , {pn:"200px"} , {pn:1.5}]
             
@@ -58,10 +55,10 @@ console.log(h[0]/ h[2])                 // = 1 : 1.5
 console.log(h[0] + h[1] +h[2])          // = htm(window).height() - 2px  , two "o" Object : total 2px
 </pre>
 link:  <a href= "p.htm"> http://gpyun.github.io/p.htm </a>
-</p>
-<p>
-"all" option : Array value , "ty" option : "|" (Horizontal 1 : 2 : 3)
+
 <pre>
+//"all" option : Array value , "ty" option : "|" (Horizontal 1 : 2 : 3)
+
 htm.contain(document , {
         ty: "|" , 
         all:[
@@ -78,7 +75,7 @@ htm.contain(document , {
               }
             ]
     })
-or
+//or
 htm.contain(document , {
         ty: "|" , 
         all:[
@@ -93,10 +90,10 @@ htm.contain(document , {
 })
 </pre>
 link:  <a href= "l.htm"> http://gpyun.github.io/l.htm </a>
-</p>
-<p>
- item "contain" option 
 <pre>
+ 
+//item "contain" option 
+
 var htl = htm.contain(document , {
         all:{                                // Vertical 1 : 1
              a: {
@@ -130,7 +127,7 @@ var htl = htm.contain(document , {
                  css: {color: "green"  ,background: "violet"}
               }
           }
-}).css({textAlign : "center" ,  font: "6em/" + htm(window).height()/2 + "px htm"})
+   }).css({textAlign : "center" ,  font: "6em/" + htm(window).height()/2 + "px htm"})
+
 </pre>
 link:  <a href= "hl.htm"> http://gpyun.github.io/hl.htm </a>
-<p>
