@@ -2,7 +2,7 @@
 
 <li> creat HTMLElement </li>
 <li> like css flexbox
-<li> convenient way to refer to an item element in the container element and adjust item percent
+<li> convenient way to refer to an item in the container element and adjust item percent
 <li> support  jquery method </li>
 <li> support element event (onclick , ontouchstart...) and hammer.js event(tap,pan ...)
 <li> support animation
@@ -171,8 +171,8 @@ var htl = htm.contain(document , {
 
 link:  <a href= "hl.htm"> http://gpyun.github.io/hl.htm </a>
 <pre>
-<tt>
-//item option : on event and method.apply
+
+<tt>//item option : on event and method.apply
 // on:{event: function(){...} , another event: function(){...} , ... }
 // method:{apply:[...]} === item.method.apply(item, [...])
 </tt>
@@ -182,13 +182,13 @@ var htl=htm.contain(document , {
                  html:"click here background color change to pink" ,
                  on: {
                       click:function(){
-                                 var htmla = htm(htl.a)
-                                 if(htmla.text().match("pink")){
-                                       htmla.css({color: "green" ,"background" : "pink"}).text("click here background color change to green")
-                                  } else {
-                                       htmla.css({color: "pink","background" : "green"}).text("click here background color change to pink")
-                                  }
-                            }
+                              var htmla = htm(htl.a)
+                              if(htmla.text().match("pink")){
+                                   htmla.css({color: "green","background":"pink"}).text("click here background color change to green")
+                               } else {
+                                   htmla.css({color: "pink","background":"green"}).text("click here background color change to pink")
+                               }
+                          }
                      }
                  
               } ,               
