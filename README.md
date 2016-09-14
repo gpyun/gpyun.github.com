@@ -22,7 +22,7 @@ htm.contain(element , option)
 <pre>
 htm.contain(element,{                         
                      all{
-                         item1:{option...} ,     //item.tagName== "TP" , <tp> element
+                         item1:{option...} ,     //item.tagName== "TP" , &lt;tp&gt; element
                          item2:{option...} ,
                          .
                          .
@@ -32,10 +32,10 @@ htm.contain(element,{
 </pre>
 item option : { 
 <li>pn: number value (>= 0) or px length</li>
-<li>tag: change "<tp>" element to other tag element</li>
+<li>tag: change "&lt;tp&gt;" element to other tag element</li>
 <pre>
-tag: "<p>"
-tag: htm("<a>").css("float","left")
+tag: "&lt;p&gt;"
+tag: htm("&lt;a&gt;").css("float","left")
 </pre> 
 <li>contain: call function : htm.contain(item , {...})</li>
 <li> All Jquery method </li> 
