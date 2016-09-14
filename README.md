@@ -80,24 +80,23 @@ console.log(htl.aa.textContent) <tt>//htm</tt>
 </pre>
 link:  <a href= "h.htm"> http://gpyun.github.io/h.htm </a>
 <pre>
-//"all" option : Array value , "o" option , (Vertical)
-
+<tt>//"all" option : Array value , "o" option , (Vertical)</tt>
 
 var htl=htm.contain(document , {
-            all: [ 1 , "200px" , 1.5] ,  // or all:[{pn:1} , {pn:"200px"} , {pn:1.5}]
+            all: [ 1 , "200px" , 1.5] ,  <tt>// or all:[{pn:1} , {pn:"200px"} , {pn:1.5}]</tt>
             
-            o : 1                        //1px ,  [ contain[0] , "o" Object , contain[1] , "o" Object , contain[2]]
+            o : 1                        <tt>//1px ,  [ contain[0] , "o" Object , contain[1] , "o" Object , contain[2]]</tt>
 })
 
 var h = [htl.contain[0].clientHeight , htl.contain[1].clientHeight , htl.contain[2].clientHeight ]
-console.log(h[1])                       // 200
-console.log(h[0]/ h[2])                 // = 1 : 1.5
-console.log(h[0] + h[1] +h[2])          // = htm(window).height() - 2px  , two "o" Object : total 2px
+console.log(h[1])                       <tt>// 200 </tt>
+console.log(h[0]/ h[2])                 <tt>// = 1 : 1.5 </tt>
+console.log(h[0] + h[1] +h[2])          <tt>// = htm(window).height() - 2px  , two "o" Object : total 2px </tt>
 </pre>
 link:  <a href= "p.htm"> http://gpyun.github.io/p.htm </a>
 
 <pre>
-//"all" option : Array value , "ty" option : "|" (Horizontal 1 : 2 : 3)
+<tt>//"all" option : Array value , "ty" option : "|" (Horizontal 1 : 2 : 3)</tt>
 
 htm.contain(document , {
         ty: "|" , 
@@ -115,7 +114,7 @@ htm.contain(document , {
               }
             ]
     })
-//or
+<tt>//or</tt>
 htm.contain(document , {
         ty: "|" , 
         all:[
@@ -131,15 +130,14 @@ htm.contain(document , {
 </pre>
 link:  <a href= "l.htm"> http://gpyun.github.io/l.htm </a>
 <pre>
- 
-//item "contain" option 
+ <tt>//item "contain" option </tt>
 
 var htl = htm.contain(document , {
-        all:{                                // Vertical 1 : 1
+        all:{                                <tt>// Vertical 1 : 1 </tt>
              a: {
                  contain:{
                           ty: "|" ,
-                          all: [             // Horizontal 1 : 1 : 1 : 1 : 1         
+                          all: [             <tt>// Horizontal 1 : 1 : 1 : 1 : 1 </tt>        
                                 {
                                  html:  "h" ,
                                  css: {color: "green"  ,background: "lightgreen"}
@@ -170,8 +168,8 @@ var htl = htm.contain(document , {
    }).css({textAlign : "center" ,  font: "900 6em/" + htm(window).height()/2 + "px htm"})
 
 </pre>
-link:  <a href= "hl.htm"> http://gpyun.github.io/hl.htm </a>
 
+link:  <a href= "hl.htm"> http://gpyun.github.io/hl.htm </a>
 <pre>
 <tt>
 //item option : on event
@@ -197,7 +195,7 @@ var htl=htm.contain(document , {
              aa:{
                  text: "Not hover" ,
                  css: {color: "green"  ,background: "violet"} ,
-                 hover : {                     //===htm(htl.aa).hover.apply(htm(htl.aa) , [function(){...} , function(){...}])
+                 hover : {                     <tt>//===htm(htl.aa).hover.apply(htm(htl.aa) , [function(){...} , function(){...}])</tt>
                                 apply :[
                                         function(){
                                                htl.aa.textContent = "Hover"     
