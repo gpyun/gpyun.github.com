@@ -9,10 +9,9 @@
 &lt;/script&gt;
 &lt;/html&gt;
 </pre>
-
 <h3>More...</h3>
-
 htm.contain(element , option)
+
 <h6>element: HTMLElement or Jquery element</h6>
 <h6>option : {
 <li>            ty: "|" (Horizontal) or other value (Vertical) </li>
@@ -20,8 +19,11 @@ htm.contain(element , option)
 <li>             o: Integer or Object value , represent thickness (like &lt;hr&gt; tag element) </li>   
             }
 <pre>
+htm.contain(element,{all:[ item1:{option...} , item2:{option...} , ...]})                        
+or   
+                 
 htm.contain(element,{                         
-                     all{
+                     all:{
                          item1:{option...} ,     //item.tagName== "TP" , &lt;tp&gt; element
                          item2:{option...} ,
                          .
@@ -38,9 +40,7 @@ tag: "&lt;p&gt;"
 tag: htm("&lt;a&gt;").css("float","left")
 </pre> 
 <li>contain: call function : htm.contain(item , {...})</li>
-<li> All Jquery method </li> 
-} </h6>
-
+<li> All Jquery method </li> } </h6>
 
 
 <pre>
