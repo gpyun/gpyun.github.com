@@ -22,7 +22,7 @@
 If want to support Hammer.js event , must add "ham.js" (fork from "hammer.js")
 <pre>&lt;script src="ham.js"&gt;&lt;/script&gt;</pre>
 
-h3>More...</h3>
+<h3>More...</h3>
 htm.contain(container element , option)
 
 <h6>element: HTMLElement or Jquery element</h6>
@@ -60,7 +60,7 @@ tag: htm("&lt;a&gt;").css("float","left")
 } </h6>
 
 <pre>
-//"all" option : Object value , (Vertical 1 : 1)
+<tt>//"all" option : Object value , (Vertical 1 : 1)</tt>
 
 var htl=htm.contain(document , {
          all:{
@@ -75,8 +75,8 @@ var htl=htm.contain(document , {
         }
 }).css({textAlign : "center" ,  font: "6em/" + htm(window).height()/2 + "px htm"})
 
-console.log(htm(htl.a).html())  //hello , htm(htl.a) === Jquery(htl.a)
-console.log(htl.aa.textContent) //htm
+console.log(htm(htl.a).html())  <tt>//hello , htm(htl.a) === Jquery(htl.a)</tt>
+console.log(htl.aa.textContent) <tt>//htm</tt>
 </pre>
 link:  <a href= "h.htm"> http://gpyun.github.io/h.htm </a>
 <pre>
