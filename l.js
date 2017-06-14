@@ -253,6 +253,7 @@ function ap(p , l){
                                          })
                                        pl.pla.p.html(a)
                                        htm("li:even" , pl.pla.p).css( {"float" : "left" , background: htm.co.lieven } )
+                                       pl.pla.prop("contentWindow").scroll("","")
                                    }
                                }
                           })
@@ -933,7 +934,7 @@ function ap(p , l){
                                                       al=(lp[3] + "").replace(/鹊|定/ , "") * 1
                                                   a=(lp[2] + "").replace(/鹊|定/ , "") * 1
                                                   if(al>a){
-                                                            l=htm.get("http://pub.alimama.com/pubauc/getCommonCampaignByItemId.json?itemId=" + lp.l[0] + "&t=" + ((t=htm.now()) + 100)  + "pvid=" + htm.p.pn + t  + "&" + htm.p.token, function(ll , aa ,al){
+                                                            l=pl.aa.get("http://pub.alimama.com/pubauc/getCommonCampaignByItemId.json?itemId=" + lp.l[0] + "&t=" + ((t=htm.now()) + 100)  + "pvid=" + htm.p.pn + t  + "&" + htm.p.token, function(ll , aa ,al){
                                                                       l=l.responseText
                                                                       if(l.replace(/\{"data"\:\{\}.*/ , "")) {
                                                                              eval("ll=" + l.replace(/\"[^\"]*Rate\"/g , '"tlrate"').replace(/\"[^\"]*st/g , '"ap').replace(/^.*?(?=\[)|"Avg.*?,|\].*/g,"") + "]")
@@ -1040,7 +1041,7 @@ function ap(p , l){
                                       l=p.ypr.a.rt.hl
                                       
                                       pl.then=pl.aa.get("http://pub.alimama.com/common/code/getAuctionCode.json?auctionid=" + l.r[0] + "&adzoneid=" + htm.p.ll[2] +  "&siteid="   + htm.p.ll[1] +  "&scenes=1&t=" + ((lt=htm.now()) + 100) + "&"+    htm.p.token + "&" + "pvid=" + htm.p.pn + lt , 
-																					      function(a , alt){ 
+																					      function(a , alt , tll){ 
 																														 if(a=a.data){
 																														     lp.ll= l.ll = {
 																																				 图片:l.r[ 1 ]  , 
@@ -1059,7 +1060,7 @@ function ap(p , l){
 																												        
                                                                a=(p.ypr.a.rt.hl.r[2] + "") .replace("鹊" , "") * 1
 																							               if(htm("t" , p.ypr.a.rt.hl.a3).text() * 1 > a){            console.log(htm("t" , p.ypr.a.rt.hl.a3).text() * 1 , a)
-																														    alt=htm.get("http://pub.alimama.com/pubauc/getCommonCampaignByItemId.json?itemId=" + p.ypr.a.rt.hl.r[0] + "&t=" + ((l=htm.now()) + 100)  + htm.p.token + "&pvid=" + htm.p.pn + l , function(ll , aa ,al){
+																														    alt=pl.aa.get("http://pub.alimama.com/pubauc/getCommonCampaignByItemId.json?itemId=" + p.ypr.a.rt.hl.r[0] + "&t=" + ((l=htm.now()) + 100)  + htm.p.token + "&pvid=" + htm.p.pn + l , function(ll , aa ,al){
 																																			 alt=alt.responseText
 																																			 if(alt.replace(/\{"data"\:\{\}.*/ , "")) {console.log("aaa")
 																																									 eval("ll=" + alt.replace(/\"[^\"]*Rate\"/g , '"tlrate"').replace(/\"[^\"]*st/g , '"ap').replace(/^.*?(?=\[)|"Avg.*?,|\].*/g,"") + "]")
@@ -1071,7 +1072,7 @@ function ap(p , l){
 																																																			 if(l.manualAudit) return ""
 																																																			 al=al.tlrate > l.tlrate ? al : l
 																																									 })
-																																									 console.log(aa,al)
+																																									 console.log(aa.apStatus,aa.tlrate)
 																																									 ll= aa.apStatus
 																																									 if(ll==2){
 																																															lp[2] = aa.tlrate + "定"
@@ -1080,6 +1081,7 @@ function ap(p , l){
 																																										if(ll==1) return
 																																										l= al.tlrate
 																																										l=~~l
+																																										  console.log(aa.apStatus,aa.tlrate)
 																																									 if(l > a){
 																																														 ll= al.apStatus
 																																														 if(ll==2){
@@ -1097,12 +1099,16 @@ function ap(p , l){
 																																	 
                                                                     })
 																											       }
-																											       (l= ltt=> ltt= (htm.now()) > lt + 5000 ? p.ra.html("加入到推广栏") : htm("<pl>").height(3).animate({height: 100} , 100 , l))()
-																											          
+																											       console.log("l")
+																											       tll= ltt=> ltt= (htm.now()) > lt + 5000 ? p.ra.html("加入到推广栏") : htm("<pl>").height(3).animate({height: 100} , 100 , tll)
+																											       tll()
+																											       console.log("tt")
+																											       return   
 																											    }
 																													
 																		                   })}
-																		                   (function lp(a){
+																		                   console.log("aaa")
+																		                   {(function lp(a){
 																		                                    a= pl.then.responseText
 																		                                    if(p.ra.text()=="加入到推广栏") return
 																		                                    if(a){
@@ -1137,7 +1143,7 @@ function ap(p , l){
 																		                                     return
 																		                                    }
 																		                                     htm("<pl>").height(3).animate({height: 100} , 100 , lp)
-																		                    })()
+																		                    })()}
 																	
 																	
 																	
@@ -1417,20 +1423,8 @@ function ap(p , l){
         a()
             
            
-           
-           
-           
-           
-           
-           
-       })()}
+     })()}
          
 
  }
- 
- 
- 
- 
- 
- 
 }
