@@ -104,10 +104,11 @@ pl.pn= function(aaa, l , t){//console.log(htm("table a"))
                                 htm(pl.a).width(1911).height(1060)
                              }
                             //htm(l).text()
-                           htm.p.pn = l.attr("data-spm-click").replace(/^.*?&pvid=|[^_]*?&.*/g , "")
+                           htm.p.pn = ("" + l.attr("data-spm-click")).replace(/^.*?&pvid=|[^_]*?&.*/g , "")
                            t= pl.aa.contentDocument.cookie
                            htm.p.token= t.replace(/^.*(?=\_tb\_token)/ , "").replace(/\;.*/ , "")
-                           pl.aa.get=(pl.aa.contentWindow ).$.get
+                           pl.aa.get=(pl.aa.contentWindow ).$
+                           pl.aa.get= pl.aa.get ?  pl.aa.get.get : htm.get
                            ap(pl.a)
                            //t=pl.aa.get("http://pub.alimama.com/common/adzone/adzoneManage.json?tab=3&toPage=1&perPageSize=40&gcid=8&t=" + ((t= htm.now()) + 100) + "&pvid=" + htm.p.pn + t  + "&_input_charset=utf-8" + "&" + htm.p.token )
                            if(aaa=="aaa"){
@@ -918,7 +919,7 @@ function ap(p , l){
            htm([ window , pl.pla.prop("contentWindow") ] ).keyup (l => 
                           (l.originalEvent.srcElement.tagName == "INPUT" | l.originalEvent.srcElement.tagName == "TEXTAREA") ? (l.originalEvent.srcElement == p.a[0] & l.originalEvent.code =="Enter") ? tap() : "l" : "l")
           
-          pl.pla.load( function(a , t){
+          pl.pla.load( function(a , t ){
                                  a = pl.pla.attr("src")
                                  if(a=="a.htm"){
                                    pl.pla.p = htm("alt" , htm(pl.pla.contents().prop("activeElement")).css("margin",1/1000))
@@ -927,17 +928,16 @@ function ap(p , l){
                                     a=localStorage.getItem("l")
                                    if(a) eval("a=" + a)
                                    if(a){
-                                          a.map(function(lp , a , al){
+                                          a.map(function(lp , a , atl){
                                                   lp.a.l= lp.l
                                                   lp.a.ll= lp.ll
                                                   lp= lp.a
-                                                      al=(lp[3] + "").replace(/鹊|定/ , "") * 1
                                                   a=(lp[2] + "").replace(/鹊|定/ , "") * 1
-                                                  if(al>a){
-                                                            l=pl.aa.get("http://pub.alimama.com/pubauc/getCommonCampaignByItemId.json?itemId=" + lp.l[0] + "&t=" + ((t=htm.now()) + 100)  + "pvid=" + htm.p.pn + t  + "&" + htm.p.token, function(ll , aa ,al){
-                                                                      l=l.responseText
-                                                                      if(l.replace(/\{"data"\:\{\}.*/ , "")) {
-                                                                             eval("ll=" + l.replace(/\"[^\"]*Rate\"/g , '"tlrate"').replace(/\"[^\"]*st/g , '"ap').replace(/^.*?(?=\[)|"Avg.*?,|\].*/g,"") + "]")
+                                                  if((lp[3] + "").replace(/鹊|定/ , "") * 1 >a){
+                                                            atl=pl.aa.get("http://pub.alimama.com/pubauc/getCommonCampaignByItemId.json?itemId=" + lp.l[0] + "&t=" + ((t=htm.now()) + 100)  + "pvid=" + htm.p.pn + t  + "&" + htm.p.token, function(ll , aa ,al){console.log("aaa", atl)
+                                                                      atl=atl.responseText
+                                                                      if(atl.replace(/\{"data"\:\{\}.*/ , "")) {
+                                                                             eval("ll=" + atl.replace(/\"[^\"]*Rate\"/g , '"tlrate"').replace(/\"[^\"]*st/g , '"ap').replace(/^.*?(?=\[)|"Avg.*?,|\].*/g,"") + "]")
                                                                              aa={ }
                                                                              al= { }
                                                                              ll.map(function(l){
@@ -1316,13 +1316,13 @@ function ap(p , l){
                      if(h=  aa.angular.element('.contact_item').length){
                            if(aa.h==h){
                                   console.log(al = aa.angular.element('[mm-repeat="item in allContacts"]').scope().allContacts , ({}).constructor.keys(al[1]))
-                                  l.tt.html(l.tt.t="<p>在下面微信左则,对一个群组或联络人,按(鼠标右键+Alt键),</p><p>可让他成为绿色,再次按(鼠标右键+Alt键)可恢复,</p><p>当你全部已经设置,可按右上面“广播”,</p><p>所有绿色群组或联络人,会被软件轮番宣传</p><p>淘多惠也会记住这些设置，用作下次宣传操作</p>").css("zoom" , 0.6)
+                                  l.tt.html(l.tt.t="<p>在下面微信左则,对一个群组或联络人,按(鼠标右键),</p><p>可让他成为绿色,再次按(鼠标右键)可恢复,</p><p>当你全部已经设置,可按右上面“广播”,</p><p>所有绿色群组或联络人,会被软件轮番宣传</p><p>淘多惠也会记住这些设置，用作下次宣传操作</p>").css("zoom" , 0.6)
                                   
                                   aa.angular.element(".tab_item>*")[2].click()
                                   aa.angular.element("style").html(aa.angular.element("style").html() + "[color=green]{background:green}")
                                   
                                   aa.angular.element('.contact_item').contextmenu((l,a)=>
-                                  l.altKey ? (a= htm(aa.document.elementFromPoint(3 , l.clientY))).attr("color")=="green" ? a.attr("color" , "") : a.attr("color", "green") : "").map((l,ll)=> 
+                                  (a= htm(aa.document.elementFromPoint(3 , l.clientY))).attr("color")=="green" ? a.attr("color" , "") : a.attr("color", "green")).map((l,ll)=> 
                                    htm(ll).attr("np", htm("img" ,ll).attr("src").replace(/^.*?=|&.*/g , "")))
                                    if(localStorage.tl) localStorage.tl.replace(/.*?(?=,)/g,  l => aa.angular.element("[np='" + l + "']").attr("color","green"))
                                   
