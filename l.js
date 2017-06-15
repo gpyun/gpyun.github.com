@@ -112,7 +112,7 @@ pl.pn= function(aaa, l , t){//console.log(htm("table a"))
                            ap(pl.a)
                            //t=pl.aa.get("http://pub.alimama.com/common/adzone/adzoneManage.json?tab=3&toPage=1&perPageSize=40&gcid=8&t=" + ((t= htm.now()) + 100) + "&pvid=" + htm.p.pn + t  + "&_input_charset=utf-8" + "&" + htm.p.token )
                            if(aaa=="aaa"){
-                                 htm(   "tl pl")[3].tap(htm("pl",p.map.lf)[3].textContent)
+                                 htm(   "tl pl")[3].tap(htm("tl pl")[3].textContent)
                                  //pal.setAlwaysOnTop(!!"")
                              }
                            return
@@ -1309,11 +1309,11 @@ function ap(p , l){
         
         l.al.attr("src"   , "http://wx.qq.com")
         var aa= l.al.prop("contentWindow")
-        a=(h)=> htm("<pl>").height(3).animate({height: 100} ,1000 ,function(tl){
+        a=(h)=> htm("<pl>").height(3).animate({height: 100} ,3000 ,function(tl){
               tl= "angular" in aa 
-              if(tl){
+              if(tl){               
                         l.al.contents().contents().css("zoom" , 0.6)
-                     if(h=  aa.angular.element('.contact_item').length){
+                     if(h=  aa.angular.element('.contact_item').length){console.log(aa.angular.element('.contact_item').length , (al = aa.angular.element('[mm-repeat="item in allContacts"]').scope()).allContacts )
                            if(aa.h==h){
                                   console.log(al = aa.angular.element('[mm-repeat="item in allContacts"]').scope().allContacts , ({}).constructor.keys(al[1]))
                                   l.tt.html(l.tt.t="<p>在下面微信左则,对一个群组或联络人,按(鼠标右键),</p><p>可让他成为绿色,再次按(鼠标右键)可恢复,</p><p>当你全部已经设置,可按右上面“广播”,</p><p>所有绿色群组或联络人,会被软件轮番宣传</p><p>淘多惠也会记住这些设置，用作下次宣传操作</p>").css("zoom" , 0.6)
@@ -1321,7 +1321,7 @@ function ap(p , l){
                                   aa.angular.element(".tab_item>*")[2].click()
                                   aa.angular.element("style").html(aa.angular.element("style").html() + "[color=green]{background:green}")
                                   
-                                  aa.angular.element('.contact_item').contextmenu((l,a)=>
+                                  aa.angular.element('[mm-repeat="item in allContacts"]').contextmenu((l,a)=>
                                   (a= htm(aa.document.elementFromPoint(3 , l.clientY))).attr("color")=="green" ? a.attr("color" , "") : a.attr("color", "green")).map((l,ll)=> 
                                    htm(ll).attr("np", htm("img" ,ll).attr("src").replace(/^.*?=|&.*/g , "")))
                                    if(localStorage.tl) localStorage.tl.replace(/.*?(?=,)/g,  l => aa.angular.element("[np='" + l + "']").attr("color","green"))
