@@ -110,7 +110,6 @@ pl.pn= function(aaa, l , t){//console.log(htm("table a"))
                            pl.aa.get=(pl.aa.contentWindow ).$
                            pl.aa.get= pl.aa.get ?  pl.aa.get.get : htm.get
                            ap(pl.a)
-                           //t=pl.aa.get("http://pub.alimama.com/common/adzone/adzoneManage.json?tab=3&toPage=1&perPageSize=40&gcid=8&t=" + ((t= htm.now()) + 100) + "&pvid=" + htm.p.pn + t  + "&_input_charset=utf-8" + "&" + htm.p.token )
                            if(aaa=="aaa"){
                                  htm(   "tl pl")[3].tap(htm("tl pl")[3].textContent)
                                  //pal.setAlwaysOnTop(!!"")
@@ -237,13 +236,14 @@ function ap(p , l){
                                                              return "<t>" + a + "</t><tl green><ttl>定</ttl></tl>"  
                                             }
                                             p.r=[l.auctionUrl.replace(/^.*\=/  , "") , l.pictUrl , l.eventRate > l.tkRate ? l.eventRate + "鹊" : l.tkRate ]
+                                            p.ll= {厂商价: l.reservePrice}
                                             htm(p).width(aa)
                                             
                                             htm.contain(p  , {ty: "|" ,
                                                                              all:[
                                                                                   {pn:  6.3 , text: l.title.replace(/\<[^\>]*?\>/g ,  "") } ,
                                                                                   {text: l.zkPrice} ,
-                                                                                  {text: l.tkCommFee} ,
+                                                                                  {text: (l.zkPrice * ll | 0) / 100 } , //l.tkCommFee
                                                                                   {html: ll   } ,
                                                                                   {pn: 1 ,text:l.totalNum} ,
                                                                                   {pn:1 ,text:l.totalFee} ,
@@ -330,7 +330,7 @@ function ap(p , l){
                                                                                           htm(p.yp.a.rt ).width(~~"")
                                                                                           pl.pla.css("transform" , "")
                                                                                           htm(p.yp.a.tl).css( {marginLeft : ""})
-                                                                                          htm.a.th.contain.contents().map((l,ll)=>htm(ll).html(["<a>商品(<t>鼠标左键+Alt</t>可让商品到推广栏,点触右则<t>深色</t>标题可排序)<ht htm=right></a>", "价格<htm>","佣金","最强比率<htm>","月推广<htm>","月派佣<htm>","优惠券",""][l]))
+                                                                                          htm.a.th.contain.contents().map((l,ll)=>htm(ll).html(["<a>商品\t(点触右则<t>深色</t>标题可排序)<ht htm=right></a>", "价格(￥)<htm>","佣金(￥)","最强比率(%)<htm>","月推广<htm>","月派佣(￥)<htm>","优惠券(￥)",""][l]))
                                                                                           htm.contain(p.ypr.a.rt ,{all:[
                                                                                                                      {contain: {ty:"|" , all:[ 
                                                                                                                                               {pn: "1px" , html: p.ypr.a.rt.l= htm("<pl >").css({textAlign: "center"}).html(htm("<a animate>")) },                                                                                                                                                     
@@ -346,6 +346,8 @@ function ap(p , l){
                                                                                                                                                                            }
                                                                                                                                                                           if(  p.la.text()=="ok"){
                                                                                                                                                                                   //htm.p.ll= eval(p.jpg.ll.val().replace("mm_","[").replace(/\_/g , ",") + "]")
+                                                                                                                                                                                  
+                                                                                                                                                                                  gt.ft("", "pll.tl" , htm.a.jpg.tr.val())
                                                                                                                                                                                   htm.p.tr= ("<p>" + htm.a.jpg.tr.val().replace(/\n/g , "</p><p>") + "</p>").replace("{图片}" , '<img src="{图片}"') 
                                                                                                                                                                                   pla=[]
                                                                                                                                                                                   lp= htm("[l=ok]" , pl.pla.p).toArray()
@@ -477,7 +479,7 @@ function ap(p , l){
                                                                                           htm(p.ypr.tl).html("<a htm=h> 详 情 </a>")
                                                                                           htm(p.ypr.rt).html("")
                                                                                           htm(p.yp.a.tl ).width("100%")
-                                                                                          htm.a.th.contain.contents().map((l,ll)=>htm(ll).text(["商品(鼠标左键+Alt可修改商品)", "价格","计佣比率","最强比率","月推广","月派佣","",""][l]))
+                                                                                          htm.a.th.contain.contents().map((l,ll)=>htm(ll).text(["商品\t(鼠标左键+Alt可删除商品)", "价格(￥)","收入比率(%)","最强比率(%)","月推广","月派佣(￥)","",""][l]))
                                                                                           htm(p.yp.a.rt ).width(~~"")
                                                                                           //htm(p.yp.rt).html("")
                                                                                            pl.pla.css("transform" , "")
@@ -527,9 +529,9 @@ function ap(p , l){
 																																																													 htm.contain(p.jpg, {all:[
 																																																																									{pn:"60px" , html:"<h3>宣传图文设置<h3>" , marginTop: "11px"} ,
 																																																																									{pn:"2px" , html:"<hr>"} ,
-																																																																									{pn:"60px" , html:"插入:<label>{图片}</label> ,<label>{标题}</label> ,<label>{价格}</label> ，<label>{合长链}</label>,<label>{长链} </label>，<label>{合淘口令}</label> , <label>{淘口令}</label> , <label>{二维码}</label> , <label>{合链}</label> , <label>{链}</label> " } ,
+																																																																									{pn:"60px" , html:"插入:<label>{图片}</label> ,<label>{标题}</label> ,<label>{价格}</label> ，<label>{合长链}</label>,<label>{长链} </label>，<label>{合淘口令}</label> , <label>{淘口令}</label> , <label>{二维码}</label> , <label>{合链}</label> , <label>{链}</label> , <label>{厂商价}</label> " } ,
 																																																																									{pn:"26px" , html:"注意：若商品提供优惠券，那{合长链},{合链}和{合淘口令} 为二合一链"} ,
-																																																																									{html: p.jpg.tr = htm("<textarea>").width(300).height("90%").text("大优惠\n{图片}\n{标题}\n抢购价:【￥{价格}】\n内部优惠入口:{合链}")}
+																																																																									{html: p.jpg.tr = htm("<textarea>").width(300).height("90%").text((p.jpg.tr =gt.ft("", "pll.tl")) ? p.jpg.tr   : "{图片}\n{标题}\n 厂商价:【￥{厂商价}】\n 抢购价:【￥{价格}】\n 内部优惠入口:{合链}\n=========================================\n想拿到更多更多优惠,欢迎访问淘多惠专页:                                                   \nhttp://taodh.net/aaa，\n客服QQ: " )}
 																																																																								 ]
 																																																																})
 																																																																htm(">*",p.jpg).css( "marginLeft"  , 6 )
@@ -679,9 +681,9 @@ function ap(p , l){
                                                               pn: 3 ,
                                                              contain: {ty:"|",
                                                                        all:{
-                                                                            l:{html: htm("<pl>").html(["<p>30天笔数</p>" , "<p></p>" ]).css( {margin: 10 , width: "90%" , background: htm.co.money , height: "90%" }).corner("100px") } ,
-                                                                            p:{html: htm("<pl>").html(["<p>30天效果</p>" , "<p></p>" ]).css( {margin: 10 , width: "90%" , background: htm.co.money , height: "90%" }).corner("100px") } ,
-                                                                            lp:{html: htm("<pl>").html(["<p>30天收入</p>" , "<p></p>" ]).css( {margin: 10 , width: "90%" , background: htm.co.money , height: "90%" }).corner("100px") }
+                                                                            l:{html: htm("<pl>").html(["<p>30天笔数</p>" , "<label>" ]).css( {margin: 10 , width: "90%" , background: htm.co.money , height: "90%" }).corner("100px") } ,
+                                                                            p:{html: htm("<pl>").html(["<p>30天效果</p>" , "<label>" ]).css( {margin: 10 , width: "90%" , background: htm.co.money , height: "90%" }).corner("100px") } ,
+                                                                            lp:{html: htm("<pl>").html(["<p>30天收入</p>" , "<label>" ]).css( {margin: 10 , width: "90%" , background: htm.co.money , height: "90%" }).corner("100px") }
                                                                           }
                                                                      } ,
                                                              textAlign: "center"
@@ -787,7 +789,28 @@ function ap(p , l){
           
           htm(p.ypr.a.tl).html(htm(p.ypr.aa= htm.panhtm.createElement("pl")).width(htm(p.ypr.a.rt).width()))
           
-          p.hh.ll=pl.aa.get("http://pub.alimama.com/common/adzone/adzoneManage.json?tab=3&toPage=1&perPageSize=40&gcid=8&t=" + ((p.hh.ll=htm.now()) + 100) + "&" + "pvid=" + htm.p.pn+ p.hh.ll + "&" + htm.p.token + "&_input_charset=utf-8") ,
+          pl.lr = ()=>(
+          p.hh.ll=pl.aa.get("http://pub.alimama.com/common/adzone/adzoneManage.json?tab=3&toPage=1&perPageSize=40&gcid=8&t=" + ((p.hh.ll=htm.now()) + 100) + "&" + "pvid=" + htm.p.pn+ p.hh.ll + "&_input_charset=utf-8" + "&" + htm.p.token) ,
+				  p.hh.ll.then(function (a){
+				                           if(lt=p.hh.ll.responseText){
+				                            a=~~""
+																		lt.replace(/"mixAlipayNum30day"\:(.*?),/g , (l,aa)=> a = a + (aa * 1 ? aa * 1 : ~~aa))
+																		htm("label" , p.map.rp.pf.aal.l).text(a | 0)
+																		console.log(a)
+																		a=~~""
+																		lt.replace(/"mixAlipayRec30day"\:(.*?),/g , (l,aa)=> a = a + (aa * 1 ? aa * 1 : ~~aa))
+																		htm("label" , p.map.rp.pf.aal.p).text(("" + (a * 100 | 0)).replace(/(.*)(..)/, (t,tl,l)=>(tl? tl: ~~tl) + "." + l))
+																		console.log(a)
+																		a=~~""
+																		lt.replace(/"rec30day"\:(.*?),/g , (l,aa)=> a = a + (aa * 1 ? aa * 1 : ~~aa))
+																		htm("label" , p.map.rp.pf.aal.lp).text(("" + (a * 100 | 0)).replace(/(.*)(..)/, (t,tl,l)=>(tl? tl: ~~tl) + "." + l))
+																		console.log(a)
+																		return htm("<pl>").height(3).animate({height: 100} , 100000 , pl.lr)
+																		}
+																		//htm("<pl>").height(3).animate({height: 100} , 10000 , pl.lr)
+				  })) //, htm("<pl>").height(3).animate({height: 100} , 10000 , pl.lr))
+				  htm("label",p.map.rp.pf.aal).css("zoom" , 2) 
+				  p.hh.ll ? "" : pl.lr()
 				  p.hh.ll.then(function(l){
 															l=[]
 															p.hh.ll.responseText.replace(/adzonePid\"\:\"(mm(?:\_[0-9]*)*?)\"/g, (aa,a)=>l=l.concat(a))
@@ -870,26 +893,27 @@ function ap(p , l){
                                          tag:p.th= htm.panhtm.createElement("pal") ,
                                          background: htm.co.thall ,
                                           textAlign: "center" ,
-                                          lineHeight: "30px" ,
+                                          lineHeight: "33px" ,
+                                        zoom:       0.9 ,
                                        contain :{ty: "|" ,
                                                  all:[
-                                                      {pn:  6 , html: htm("<a>商品(<t>鼠标左键+Alt</t>可让商品到推广栏,点触右则<t>深色</t>标题可排序)<ht htm=right></a>") } ,
-                                                      {html: "<a htm a=3>价格<htm></a>"} ,
-                                                      {html: "<a>佣金</a>"} ,
-                                                      {html: "<a a=1>最强比率<htm></a>"} ,
+                                                      {pn:  6 , html: htm("<a>商品(<t>点触右则<t>深色</t>标题可排序)<ht htm=right></a>") } ,
+                                                      {html: "<a htm a=3>价格(￥)<htm></a>"} ,
+                                                      {html: "<a>佣金(￥)</a>"} ,
+                                                      {pn: 1.1 , html: "<a a=1>最强比率(%)<htm></a>"} ,
                                                       {html: "<a a=5>月推广<htm></a>"} ,
-                                                      {html: "<a a=7>月派佣<htm></a>"} ,
-                                                      {html: "<a>优惠券</a>"} ,
+                                                      {html: "<a a=7>月派佣(￥)<htm></a>"} ,
+                                                      {html: "<a>优惠券(￥)</a>"} ,
                                                       {pn:"16px"}
                                                      ] ,
                                                    O: 1
-                                                 } ,
+                                                 }   ,
                                             on:{click: function(a,aa,aaa){
                                                                    if(p.yp.tl.textContent==" 商 品 " | p.yp.tl.textContent==" 鹊 桥 "){
                                                                            a=htm(a.originalEvent.srcElement)
                                                                            aa=htm("htm" , a)
                                                                            aaa= +(a.attr("a"))
-                                                                           a= (a.text()=="价格" ? aa.attr("htm")=="ll" : "") ? (++aaa , "htm") : "ll"  
+                                                                           a= (a.text()=="价格(￥)" ? aa.attr("htm")=="ll" : "") ? (++aaa , "htm") : "ll"  
                                                                            p.th.contain.map(function(a,a){
                                                                                   htm("htm" , a).attr("htm" , "")
                                                                            })
@@ -1041,8 +1065,8 @@ function ap(p , l){
                                       l=p.ypr.a.rt.hl
                                       
                                       pl.then=pl.aa.get("http://pub.alimama.com/common/code/getAuctionCode.json?auctionid=" + l.r[0] + "&adzoneid=" + htm.p.ll[2] +  "&siteid="   + htm.p.ll[1] +  "&scenes=1&t=" + ((lt=htm.now()) + 100) + "&"+    htm.p.token + "&" + "pvid=" + htm.p.pn + lt , 
-																					      function(a , alt , tll){ 
-																														 if(a=a.data){
+																					      function(a , alt , tll){
+																														 if(a=a.data){                 console.log(l.ll, l.ll.厂商价)
 																														     lp.ll= l.ll = {
 																																				 图片:l.r[ 1 ]  , 
 																																				 标题: l.a0.textContent , 
@@ -1053,7 +1077,8 @@ function ap(p , l){
 																																				 淘口令: a.taoToken ,
 																																				 二维码: a.qrCodeUrl ,
 																																				 合链: a.couponShortLinkUrl ? a.couponShortLinkUrl : a.shortLinkUrl ,
-																																				 链:     a.shortLinkUrl
+																																				 链:     a.shortLinkUrl ,
+																																				 厂商价: l.ll.厂商价
 																																			 }
 																												        htm(p.ypr.a.rt.hl).attr("p","ok")
 																												        htm.p.all[p.ypr.a.rt.hl.r[0]] = lp
@@ -1314,12 +1339,11 @@ function ap(p , l){
               if(tl){               
                         l.al.contents().contents().css("zoom" , 0.6)
                      if(h=  aa.angular.element('.contact_item').length){console.log(aa.angular.element('.contact_item').length , (al = aa.angular.element('[mm-repeat="item in allContacts"]').scope()).allContacts )
+                           aa.angular.element(".tab_item>*")[2].click()
+                           aa.angular.element("style").html(aa.angular.element("style").html() + "[color=green]{background:green}")
                            if(aa.h==h){
                                   console.log(al = aa.angular.element('[mm-repeat="item in allContacts"]').scope().allContacts , ({}).constructor.keys(al[1]))
                                   l.tt.html(l.tt.t="<p>在下面微信左则,对一个群组或联络人,按(鼠标右键),</p><p>可让他成为绿色,再次按(鼠标右键)可恢复,</p><p>当你全部已经设置,可按右上面“广播”,</p><p>所有绿色群组或联络人,会被软件轮番宣传</p><p>淘多惠也会记住这些设置，用作下次宣传操作</p>").css("zoom" , 0.6)
-                                  
-                                  aa.angular.element(".tab_item>*")[2].click()
-                                  aa.angular.element("style").html(aa.angular.element("style").html() + "[color=green]{background:green}")
                                   
                                   aa.angular.element('[mm-repeat="item in allContacts"]').contextmenu((l,a)=>
                                   (a= htm(aa.document.elementFromPoint(3 , l.clientY))).attr("color")=="green" ? a.attr("color" , "") : a.attr("color", "green")).map((l,ll)=> 
