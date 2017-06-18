@@ -662,8 +662,8 @@ function ap(p , l){
                                                               pn: 3 ,
                                                              contain: {ty:"|",
                                                                        all:{
-                                                                            l:{html: htm("<pl>").html(["<p>今天效果</p>" , "<label>" ]).css( {margin: 10 , width: "90%" , background: htm.co.money , height: "90%" }).corner("100px") } ,
-                                                                            p:{html: htm("<pl>").html(["<p>30天效果</p>" , "<label>" ]).css( {margin: 10 , width: "90%" , background: htm.co.money , height: "90%" }).corner("100px") } ,
+                                                                            l:{html: htm("<pl>").html(["<p>今天效果:<a></a></p>" , "<label>" ]).css( {margin: 10 , width: "90%" , background: htm.co.money , height: "90%" }).corner("100px") } ,
+                                                                            p:{html: htm("<pl>").html(["<p>30天效果:<a></a></p>" , "<label>" ]).css( {margin: 10 , width: "90%" , background: htm.co.money , height: "90%" }).corner("100px") } ,
                                                                             lp:{html: htm("<pl>").html(["<p>30天收入</p>" , "<label>" ]).css( {margin: 10 , width: "90%" , background: htm.co.money , height: "90%" }).corner("100px") }
                                                                           }
                                                                      } ,
@@ -779,7 +779,8 @@ function ap(p , l){
 																		}
 																		//htm("<pl>").height(3).animate({height: 100} , 10000 , pl.lr)
 				  })) //, htm("<pl>").height(3).animate({height: 100} , 10000 , pl.lr))*/
-				  htm("label",p.map.rp.pf.aal).css("zoom" , 2) 
+				  htm("label",p.map.rp.pf.aal).css("zoom" , 2)
+				  htm("a",p.map.rp.pf.aal).css( "color" , htm.color.label) 
 				  //p.hh.ll ? "" : pl.lr()
 				  p.hh.ll=pl.aa.get("http://pub.alimama.com/common/adzone/adzoneManage.json?tab=3&toPage=1&perPageSize=40&gcid=8&t=" + ((p.hh.ll=htm.now()) + 100) + "&" + "pvid=" + htm.p.pn+ p.hh.ll + "&_input_charset=utf-8" + "&" + htm.p.token)
 				  p.hh.ll.then(function(l , a , lt){
@@ -792,11 +793,11 @@ function ap(p , l){
 																		    a=~~""
 																		    lt.replace(/"mixAlipayRec30day"\:(.*?),/g , (l,aa)=> a = a + (aa * 1 ? aa * 1 : ~~aa))
 																		    //htm("label" , p.map.rp.pf.aal.p).text(("" + (a * 100 | 0)).replace(/(.*)(..)/, (t,tl,l)=>(tl? tl: ~~tl) + "." + l))
-																		    htm.p.AlipayR = (a * 100 | 0)
+																		    htm.p.AlipayR = a
 																		    a=~~""
-																		    lt.replace(/"rec30day"\:(.*?),/g , (l,aa)=> a = a + (aa * 1 ? aa * 1 : ~~aa))
-																	      htm("label" , p.map.rp.pf.aal.lp).text(("" + (a * 100 | 0)).replace(/(.*)(..)/, (t,tl,l)=>(tl? tl: ~~tl) + "." + l))
-																	      htm.p.Alipay = a
+																		    lt.replace(/"rec30day"\:(.*?),/g , (l,aa)=> a = a + (aa* 1 ? aa * 1 : ~~aa))
+																	      htm("label" , p.map.rp.pf.aal.lp).text("￥" + ("" + (a * 100 | 0)).replace(/(.*)(..)/, (t,tl,l)=>(tl? tl: ~~tl) + "." + l))
+																	      //htm.p.Alipay = a
  																				
 																				l=[]
 																				lt.replace(/adzonePid\"\:\"(mm(?:\_[0-9]*)*?)\"/g, (aa,a)=>l=l.concat(a))
@@ -828,13 +829,22 @@ function ap(p , l){
 																			 p.hh.ll.then(function (a , l ,tl){
 																			                         p.hh.lr="aaa"
 																															 if(lt=p.hh.ll.responseText){
-																																 lt=lt.replace(/^.*(?=\[\{)|\}\].*/g , "") + "\}\]"  
+																																 tl=lt.replace(/^.*(?=\[\{)|\}\].*/g , "") + "\}\]"  
 																																 console.log(lt)
-																																 l=eval(lt)
+																																 if(tl==lt + "\}\]"){
+																																                     htm("a" , p.map.rp.pf.aal.l).html("共0笔")
+																																                     htm("label" , p.map.rp.pf.aal.l).html("￥0")
+                                                                                     htm("a" , p.map.rp.pf.aal.p).html("共" + htm.p.AlipayN + "笔")
+                                                                                     htm("label" , p.map.rp.pf.aal.p).html("￥" + htm.p.AlipayR)
+                                                                                     return htm("<pl>").height(3).animate({height: 100} , 100000 , pl.lr)
+																																   }
+																																 l=eval(tl)
 																																 tl=~~""
                                                                  l.map(lt=> tl=tl + ~~lt.feeString)
-                                                                 htm("label" , p.map.rp.pf.aal.l).html("共" + l.length + "笔 ￥" + (lt * 100 | 0))
-                                                                 htm("label" , p.map.rp.pf.aal.p).html(("共" + htm.p.AlipayN + "笔 ￥" + htm.p.AlipayR))
+                                                                 htm("a" , p.map.rp.pf.aal.l).html("共" + l.length + "笔")
+                                                                 htm("label" , p.map.rp.pf.aal.l).html("￥" + (lt * 100 | 0) / 100)
+                                                                 htm("a" , p.map.rp.pf.aal.p).html("共"+(l +htm.p.AlipayN) + "笔")
+                                                                 htm("label" , p.map.rp.pf.aal.p).html("￥" + ((lt + htm.p.AlipayR) * 100 | 0) / 100)
                                                                  //htm("label" , p.map.rp.pf.aal.lp).html(("共" + (htm.p.Alipay * 100 | 0)).replace(/(.*)(..)/, (t,tl,l)=>(tl? tl: ~~tl) + "." + l))
 																																return htm("<pl>").height(3).animate({height: 100} , 100000 , pl.lr)
 																																}
