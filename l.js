@@ -831,11 +831,11 @@ function ap(p , l){
 																																								 }}}// ,textAlign: "right"
 																												]})
                                       htm.p.ll= eval(p.hh.ll.val().replace("mm_","[").replace(/\_/g , ",") + "]")
-                                      pl.lr = (tl)=>( 
-                                       //tl= new Date   
-																			 //tl=tl.getFullYear() + "-" + (tl.getMonth() + 1) + "-" + tl.getDate()//startTime=" + "tl" + "
+                                      pl.lr = (t , tt)=>( 
+                                       t= new Date() , 
+																			 t=t.getFullYear() + "-" + ((tt=t.getMonth() + 1) > 9 ? tt : "0" + tt) + "-" + t.getDate() ,
 																			 p.hh.ll=pl.aa.get("http://pub.alimama.com/report/getTbkPaymentDetails.json?&payStatus=12&queryType=1&toPage=1&perPageSize=20&total=&t=" + ((p.hh.ll=htm.now()) + 100) + "&" + "pvid=" + htm.p.pn+ p.hh.ll + "&_input_charset=utf-8" + "&" + htm.p.token) ,
-																			 p.hh.ll.then(function (a , l ,tl){
+																			 p.hh.ll.then(function (al , l ,tl){
 																			                         p.hh.lr="aaa"
 																															 if(lt=p.hh.ll.responseText){
 																																 tl=lt.replace(/^.*(?=\[\{)|\}\].*/g , "") + "\}\]"  
@@ -848,11 +848,12 @@ function ap(p , l){
                                                                                      return htm("<pl>").height(3).animate({height: 100} , 100000 , pl.lr)
 																																   }
 																																 l=eval(tl)
-																																 tl=~~""
-                                                                 l.map(lt=> tl=tl + ~~lt.feeString)
-                                                                 htm("a" , p.map.rp.pf.aal.l).html("共" + l.length + "笔")
+																																 
+																																 tl=al=~~""
+                                                                 l.map(lt=> t==lt.createTime.replace(/ .*/ , "") ? (al=al+1 , tl=tl + ~~lt.feeString) : "")
+                                                                 htm("a" , p.map.rp.pf.aal.l).html("共" + al + "笔")
                                                                  htm("label" , p.map.rp.pf.aal.l).html("￥" + (tl * 100 | 0) / 100)
-                                                                 htm("a" , p.map.rp.pf.aal.p).html("共"+(l +htm.p.AlipayN) + "笔")
+                                                                 htm("a" , p.map.rp.pf.aal.p).html("共"+(al +htm.p.AlipayN) + "笔")
                                                                  htm("label" , p.map.rp.pf.aal.p).html("￥" + ((tl + htm.p.AlipayR) * 100 | 0) / 100)
                                                                  //htm("label" , p.map.rp.pf.aal.lp).html(("共" + (htm.p.Alipay * 100 | 0)).replace(/(.*)(..)/, (t,tl,l)=>(tl? tl: ~~tl) + "." + l))
 																																return htm("<pl>").height(3).animate({height: 100} , 100000 , pl.lr)
