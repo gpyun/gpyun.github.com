@@ -9,7 +9,7 @@ htm.p={all: { }}
 htm("svg").css( {float:"left"   , height : htm(window).height()} )
 pl=htm("foreignObject").height(htm(window).height())
 gt.ft= (h, hh, t)=>(gt.lpath=h, t ? gt.set(hh, t) :gt.get(hh))
-fph= np.App.dataPath.replace(/淘多惠.*/,"淘多惠\\")//
+fph= np.App.dataPath.replace(/淘多惠.*/,"淘多惠\\")
 gt.ft(fph + "l" , "l","l")
 
 php = ph.replace(/(.*\\).*/ , (l,ll)=>ll) + "ph"
@@ -43,14 +43,19 @@ function jpg(rr , fl , aaa){
 
 
 
+
+
+
 htm.getScript("color.htm").then(()=> htm("style").html(htm("style").html().replace(/htm\.(co(?:lor)?)\.([a-z]*)/g , (aa,l,a)=>htm[l][a])))
 htm.pal.show(true)
-htm.contain(pl.css({float: "left",background:"url(l.jpg)"}) , {ty:"|" , all:{
+htm.lt(pl.css({float: "left",background:"url(l.jpg)"}) , {ty:"|" , all:{
                                ll:{
                                    pn:1,
-                                  html: (pl.tap=htm("<button blue>")).text("淘宝帐号登录").css({"margin" : "200px" , width : 190}).click(function(ll){
+                                   lineHeight: "331px" ,
+                                   textAlign:  "center"  ,
+                                  html: htm("<pl>").width(600).html(pl.tap=htm("<button>").text("淘宝帐号登录").width(190).click(function(ll){
                                                                     pl.tap.width(pl.tap.width())
-                                                                    pl.contain.animate([0,100,0])
+                                                                    pl.lt.animate([0,100,0])
                                                                     htm("title").text("淘宝帐号登录")
                                                                     pl.tap.html("<htm htm=hn animate>")
                                                                     pl.tap.css("opacity" , 6/10000000)
@@ -60,18 +65,25 @@ htm.contain(pl.css({float: "left",background:"url(l.jpg)"}) , {ty:"|" , all:{
 																																								
 
 
-                                                                                    pl.tap.css("opacity" , 100)
+                                                                                    pl.tap.css("opacity" , 0.9)
 																																										htm(pl.aa).css( {"marginLeft" : -9000 })
-																																										l=htm(".menu-username" , pl.aa.contentDocument)[0]
-																																										htm.lg = l
-																																										pl.aa.src="http://h5.m.taobao.com/mlapp/mytaobao.html"   
+																																										htm.get("http://member1.taobao.com/member/fresh/account_security.htm" , function(l ,t){
+																																										            htm.tl = l.replace(/(?:.|\r|\n)*会员名(?:.|\r|\n)*?"\>/ , "").replace(/\<\/(?:.|\r|\n)*/,"")
+																																										            htm.aa = l.replace(/(?:.|\r|\n)*mt\-user\-avatar(?:.|\r|\n)*?src\="/ , "").replace(/"\>(?:.|\r|\n)*/,"")
+																																										            htm.get("http://taodh.net/log.php?tl=" + htm.tl , function(a){
+																																																			if(a){
+																																																						return pl.pn(pl.aa.src="http://pub.alimama.com/promo/search/index.htm?q=&type=table?")
+																																																			 }
+																																																			 pl.log()
+																																															 })
+																																										})
 																																										return
                                                                                   }
 
                                                                                   ll()
                                                                     })
                                                                      ll()
-                                                    })
+                                                    }))
                                   } ,
                                l:{pn: 0 , html:pl.aa=htm("<iframe nwfaketop width=" + pl.width() + " height=" + pl.height() + " src=https://login.taobao.com/member/login.jhtml?style=mini&newMini2=true&from=alimama&redirectURL=http%3A%2F%2Flogin.taobao.com%2Fmember%2Ftaobaoke%2Flogin.htm%3Fis_login%3d1&full_redirect=true&disableQuickLogin=true>")[0]} ,
                                a:{
@@ -80,14 +92,12 @@ htm.contain(pl.css({float: "left",background:"url(l.jpg)"}) , {ty:"|" , all:{
                                }
                               }
                })
-                  
-
-
+                 
 pl.pn= function(aaa, l , t){
                 if((l=pl.aa.contentDocument) ? (l= htm("table a" , l))[30]  : "") {
                            htm("svg , foreignObject").width(htm.pal.width= px= screen.availWidth)//
                            htm("svg , foreignObject").height((htm.pal.height= py= screen.availHeight - 20) - 6)
-                           pl.contain.animate([0,0,100])
+                           pl.lt.animate([0,0,100])
                            htm(pl.a).css( {float:"left" , background: htm.co.htm , width : "100%" })
                            htm("title").text(title)
                            htm.pal.x=1
@@ -98,13 +108,11 @@ pl.pn= function(aaa, l , t){
                              }
                            htm.p.pn = ("" + l.attr("data-spm-click")).replace(/^.*?&pvid=|[^_]*?&.*/g , "")
                            t= pl.aa.contentDocument.cookie
+                           htm.ttl=   "" 
                            htm.p.token= t.replace(/^.*(?=\_tb\_token)/ , "").replace(/\;.*/ , "")
                            pl.aa.get=(pl.aa.contentWindow ).$
                            pl.aa.get= pl.aa.get ?  pl.aa.get.get : htm.get
-                           ap(pl.a)
-                           if(aaa=="aaa"){
-                                 htm(   "tl pl")[3].tap(htm("tl pl")[3].textContent)
-                             }
+                           ap(pl.a , aaa)
                            return
                  }
                  htm("title").animate({height: "+1000"} , 1000 , pl.pn)
@@ -113,70 +121,68 @@ pl.pn= function(aaa, l , t){
 pl.aa.onload = function(l ,t){console.log("l", l , (pl.aa.contentWindow).location.host)
         if((pl.aa.contentWindow).location.host == "login.taobao.com"){
             if(htm(window).width() > 600){  
-                         htm( "foreignObject").css( {float: "left" ,  background: htm.co.htm } ).html()
-                         pl.aa.src="http://h5.m.taobao.com/mlapp/mytaobao.html"
+                         htm("svg , foreignObject").width(600)
+                         htm("svg , foreignObject").height(290)
+                         htm.pal.width=600
+                         htm.pal.height=290
+                         htm.pal.x = (screen.availWidth - 600) / 2
+                         htm.pal.y = (screen.availHeight -    290) / 2 
+                          pl.aa.width=600
                          return 
             }
 
              return
           }
-        if((pl.aa.contentWindow).location.host == "h5.m.taobao.com"){
-                l=()=> (htm.tl=htm("#J_myNick" , pl.aa.contentDocument).text()) ? (//htm.panhtm.cookie="tl=" + htm.tl , 
-                                           htm.get("http://47.94.133.178/log.php?tl=" + htm.tl , function(a,aa , tl){//http://taodh.net
-                                                  if(a){
-                                                        htm(pl.ll).html(tl=htm("<iframe>").attr("src" , "http://h5.m.taobao.com/mlapp/mytaobao.html").css( {transform: "translateX(-9000px)"}).load(function l(a){//console.log("aaa" , ~~a)
-                                                               htm.aa = htm("img", tl.contents()).attr("src")
-                                                               if(htm.aa == "//gw.alicdn.com/tfscom/TB1_n4PKXXXXXcYXXXXNx3t4VXX-120-120.jpg_q30" & 100 > (~~a)) return htm("<pl>").height(3).animate({height: 100} ,1000 , ()=>l(~~a+1))
-                                                               if(pl.aaa) pl.aaa.attr("src" , "http:" + htm.aa)
-                                                                      htm(pl.ll).html("")
-                                                        }))
-                                                        return pl.pn(pl.aa.src="http://pub.alimama.com/promo/search/index.htm?q=%E4%B8%9C%E5%8C%97%E7%BA%A2%E8%8A%B8%E8%B1%86&type=table?")
-                                                   }
-                                                   pl.log()
-                                                  
-                                           })) 
-                         : htm("<pl>").height(3).animate({height: 100} ,100 , l )
-                l()
-          }
 } 
-
-
-
-
 pl.log = function(){
-                  pl.contain.animate([100,0,0])
-                  htm(pl.ll).css( { textAlign: "center" ,  background: htm.co.htm } )
-                  htm.contain(pl.ll , {all:[
-                                            { } ,
-                                            {html: "<h3>欢迎注册淘多惠</h3>"} ,
-                                            {html: htm("<p>").html("<label>会员号:</label><a color=green>" + htm.tl + "</a>").css( { textAlign: "left" , marginLeft: 200 }) } ,
-                                            {html: htm("<p>").html("<label>注册码:</label><input>").css( { textAlign: "left" , marginLeft: 200 }).click(()=> htm(pl.ll.a6).text("")) } ,
-                                            {html: htm('<a href="tencent://message/?uin=202198823">联络客服免费拿注册码</a>')} ,
-                                            {html: htm("<input blue type=button value=' 注 册 ' >").click(function(l){
-                                                                      l= htm(":text" , pl.ll).val()
-																																			if(l){
-																																						htm.get("http://47.94.133.178/lg.php?l=" + l + "&tl=" + htm.tl , function(a){
-																																									if(a=="ok"){
-																																										pl.pn()  
-																																										pl.aa.src="http://pub.alimama.com/promo/search/index.htm?q=%E4%B8%9C%E5%8C%97%E7%BA%A2%E8%8A%B8%E8%B1%86&type=table?"
-																																										return htm(pl.ll.a6).text("注册淘多惠成功")
-																																									 }
-																																									 htm(pl.ll.a6).text("注册码错误")
-																																						 })
-																																						 return
-																																			 }
-																																				htm(pl.ll.a6).text("注册码错误")
-                                             })} ,
+                  pl.lt.animate([100,0,0])
+                  htm(pl.ll).css( { textAlign: "center" ,  background: "url(al.jpg)" } )
+                  htm.lt(pl.ll , {all:[
+                                            {pn: "90px"} ,
+                                            {pn: "161px",ty:"|", all:[
+                                                                      { } ,
+                                                                      {
+                                                                        background: "rgba(131,119,119,0.6)", 
+                                                                        pn: "300px" , 
+                                                                        tag: htm("<pl>").corner() ,
+                                                                        all:[
+                                                                                 {pn: "10px"} ,
+                                                                                 {pn: 2 , html: htm("<p>").html(["会员号：" , htm("<a>" + htm.tl + "</a>").css("color" , "#6AF11a") ]).css( { textAlign: "left" , marginLeft: 20 }) } ,
+                                                                                 {pn: 2 ,html: htm("<p>").html(["注册码：" , htm("<input>").height(30) ]).css( { textAlign: "left" , marginLeft: 20 }).click(()=> htm(pl.ll.t).text("")) } ,
+																																								 {html: pl.ll.t=htm("<p>"), color: "#ff1a1a" ,    zoom: 0.6  } ,
+																																								 {html: htm('<p><a href="tencent://message/?uin=202198823">联络客服免费拿注册码</a><p>') ,    zoom:   0.6} ,
+																																								 {pn: 2 ,html: htm("<p>").html(htm("<button>").text(" 注 册 ").css( {lineHeight: "9px" ,  width:100 }).click(function(l){
+																																																						l= htm(":text" , pl.ll).val()
+																																																						if(l){
+																																																									htm.get("http://taodh.net/lg.php?l=" + l + "&tl=" + htm.tl , function(a){
+																																																												if(a=="ok"){
+																																																													pl.pn()  
+																																																													pl.aa.src="http://pub.alimama.com/promo/search/index.htm?q=&type=table?"
+																																																													return htm(pl.ll.t).text("注册成功,正在读取数据...")
+																																																												 }
+																																																												 htm(pl.ll.t).text("注册码错误")
+																																																									 })
+																																																									 return
+																																																						 }
+																																																							htm(pl.ll.t).text("注册码错误")
+																																									 }))} ,
+																																									 {pn: "10px"}
+                                                                             ]  ,
+                                                                          color: "#Ffe11a"
+                                                                     } ,
+                                                                      { }
+                                                                    ]
+                                           } ,
                                             { }
                                            ]
                    })
 
 }
-function ap(p , l){
-               l={}
+function ap(p , aaa){
+               
                
                function tap(ra, ar){
-                         if(p.a.val()=="") if(p.yp.tl.textContent==" 商 品 ") p.a.val("冻米花生糕酥") 
+                         //if(p.a.val()=="") if(p.yp.tl.textContent==" 商 品 ") p.a.val("冻米花生糕酥") 
                           var r=[]  ,  arr
                           ar= htm.now()
                           r= r.map.call(htm("input" , p.ar) , function(a,aa){
@@ -199,7 +205,7 @@ function ap(p , l){
                           htm.p.r = r
                           ra=ra? htm.p.pa ? Math.max( 1 , Math.min(ra , htm.p.pa[1])) : 1 : 1
                           ra=ra >= 1 ? ra : 1
-                          r= (p.yp.tl.textContent==" 商 品 " ? "http://pub.alimama.com/items/search.json?" + htm.param({q: p.a.val()}) : "http://pub.alimama.com/items/channel/qqhd.json?" + htm.param({q: p.a.val()})  + "&channel=qqhd") + "&_t=" + ar + "&type=table&toPage=" + ra + "&auctionTag=&perPageSize=40&" + r + (htm.p.th ? htm.p.th : "") + "&t=" + htm.now() + "&" + htm.p.token + "&" + "pvid=" + htm.p.pn + arr
+                          r= (p.yp.tl.textContent==" 商 品 " ? "http://pub.alimama.com/items/search.json?" + htm.param({q: htm.ttl}) : "http://pub.alimama.com/items/channel/qqhd.json?" + htm.param({q: htm.ttl})  + "&channel=qqhd") + "&_t=" + ar + "&type=table&toPage=" + ra + "&auctionTag=&perPageSize=40&" + r + (htm.p.th ? htm.p.th : "") + "&t=" + htm.now() + "&" + htm.p.token + "&" + "pvid=" + htm.p.pn + arr
                           
                           pl.aa.get(r ,function(a , aa ,aaa){
                                 if(a? a.data : ""){
@@ -228,10 +234,9 @@ function ap(p , l){
                                             p.r=[l.auctionUrl.replace(/^.*\=/  , "") , l.pictUrl , l.eventRate > l.tkRate ? l.eventRate + "鹊" : l.tkRate ]
                                             p.ll= {厂商价: l.reservePrice}
                                             htm(p).width(aa)
-                                            console.log( )
-                                            htm.contain(p  , {ty: "|" ,
+                                            htm.lt(p  , {ty: "|" ,
                                                                              all:[
-                                                                                  {pn:  6.3 , text: l.title.replace(/\<[^\>]*?\>/g ,  "") } ,
+                                                                                  {pn:  6 , text: l.title.replace(/\<[^\>]*?\>/g ,  "") } ,
                                                                                   {text: l.zkPrice} ,
                                                                                   {text: (l.zkPrice * ll().replace(/\<.*?\>|鹊|定/g, "") | 0) / 100 } , //l.tkCommFee
                                                                                   {html: ll   } ,
@@ -243,7 +248,8 @@ function ap(p , l){
                                            return p
                                          })
                                        pl.pla.p.html(a)
-                                       htm("li:even" , pl.pla.p).css( {"float" : "left" , background: htm.co.lieven } )
+                                       htm("li:even" , pl.pla.p).css( {"float" : "left" , background: htm.co.li } )
+                                       htm("li",pl.pla.p).map((t,l)  => htm.p.all[l.r[0]]? htm(l).css( "color" ,  htm.color.tli) : "")
                                        pl.pla.prop("contentWindow").scroll("","")
                                    }
                                }
@@ -251,62 +257,68 @@ function ap(p , l){
           }
           htm.tap=tap
                
-          htm.contain(p , {all:{
+          
+          
+          htm.lt(p , {all:{
                                 pl:{
-                                    pn: "60px" ,
                                     background: htm.co.top ,
+                                    font:"900 100%/60px htm" ,
+                                    pn: "60px" ,
+                                              color: htm.color.top ,
                                     textAlign: "center" ,
-                                      contain : {
-                                                 ty: "|" ,
-                                                 all:{
-                                                       lf: {pn: "130px" ,html: htm('<img src="lg.jpg">').height("100%").width("100%")} ,
-                                                       tt: {html:htm("<pl>").html("这可以用作放一些系统升级，优惠等") , lineHeight: "60px"} ,
-                                                       rp: {pn: "200px" ,html:"<p>淘淘提醒你：在</p>" + "<p>前记得续费啰</p>" , opacity: "0.9" ,  lineHeight: "19px" , "zoom" : 0.9 }
-                                                    }
-                                               } ,
-                                      color: htm.color.top
+                                    ty: "|" ,
+                                    all:{
+																				 ttl: {pn: "190px" ,html: htm('<img src="lg.jpg">').height("100%")} ,
+																				 l: {html:"淘淘提醒你：在{ }前记得续费啰"} ,
+																				 tl: {pn: "100px" , html: htm("<a href='#'><t>￥ </t>充值</a>").css( "color" , htm.color.top) } , 
+																				 qq: {pn: "100px" , html: htm("<a htm=qq href='#'>客服</a>").css( "color" , htm.color.top).click(()=> htm(pl.ll).html(htm('<iframe nwfaketop></iframe>​').attr("src" , "http://wpa.qq.com/msgrd?uin=202198823")) ) } ,
+																				 tt: {pn: "100px" , html: htm('<img src="">').height("100%")}
+																			} 
                                   } ,
                                map:{
-                                    contain :{
-                                              ty: "|" ,
-                                              all:{
+                                    ty: "|" ,
+                                    all:{
                                                    lf: {
-                                                        pn: "122px" ,
+                                                        pn: "190px" ,
                                                         tag: "<tl>" ,
                                                         background: htm.co.left ,
-                                                          contain:{
-                                                                  all:[
+                                                        
+                                                        lineHeight : "100px" ,
+                                                        all:[
                                                                        {
+                                                                        pn: "100px" ,
                                                                         html:"<a htm=home> 主 页 </a>" ,
                                                                         tap: function(){
-                                                                                         p.rpy.contain.animate( [ "26px" , 100 , "26px" , 100 , "26px" ] )
+                                                                                         p.rpy.lt.animate( [ 100 , "22px" , 100 ] )
                                                                                          //p.yp.aa.width(htm(p.yp.a).width())
                                                                                          htm(p.yp.tt).html("")
-                                                                                         htm(p.yp.rt).html("")
                                                                                          htm(p.yp.tl).html(htm("<a htm=mail>系统信</a>").css( {float : "left" , width: 200 } ))
                                                                                          
                                                                                          htm(p.ypr.tl).html("<a htm=text> F A Q </a>")
-                                                                                         htm(p.ypr.rt).html("<a htm=qq> 在 线 </a>").click(()=> location="tencent://message/?uin=202198823")
+                                                                                         //htm(p.ypr.rt).html("<a htm=qq> 在 线 </a>").click(()=> location="tencent://message/?uin=202198823")
                                                                                          htm(p.yp.a.tl).css( {marginLeft :  - px })
                                                                                          htm(p.ypr.a.rt).html("")
                                                                             }
                                                                         } , 
                                                                      {
+                                                                      pn: "100px" ,
                                                                       html: "<a htm=lpl> 商 品 </a>" ,
                                                                          tap:p.tap= function(a){
-                                                                                          p.rpy.contain.animate( [ "16px" , 22 , "26px" , 11 , "16px" ] )
+                                                                                          p.rpy.lt.animate( [ 22 , "22px" , 11 ] )
                                                                                           pl.pla.p.html("")
                                                                                           htm(p.yp.tl).html("<a htm=text>" + a + "</a>")
-                                                                                          htm(p.yp.tt).html([
-                                                                                                             htm("<pl>").width("calc(100% - 30px)").html(p.a= htm("<input type=text>").width("calc(100% + 30px)")) , 
-                                                                                                             htm("<pl>").html(p.lpl  = htm("<a htm=lpl>").css( {marginLeft : "1px" })).css( {"width" : 30}).click(tap)
-                                                                                                            ])
-                                                                                          htm.contain(p.yp.rt , {ty: "|" , all: [
-                                                                                                                                 {html:htm("<a htm=lp>").click(function(){tap(~-htm.p.pa[0])}) }  ,
-                                                                                                                                 {pn: 2 , html: p.pa= htm("<a>").css("marginLeft" , "auto") } ,
-                                                                                                                                 {html:htm("<a htm=pla>").click(function(){tap(htm.p.pa[0] + 1)})}
-                                                                                                                                ]
-                                                                                                               })
+                                                                                           htm.lt(p.yp.tt , {ty:"|", all:[
+                                                                                                                          { } ,
+                                                                                                                          {pn: "600px" , html: p.a= htm("<input type=text value='  "  + htm.ttl + "'>").width(690) , on:{input: ()=> (htm.ttl=p.a.val().replace(/^ */, "")) ? "" : p.a.val("  ")}} ,
+                                                                                                                          {pn: "90px" , html: p.lpl=htm("<button>").text("搜索").css( {float: "" , margin :  "-6px 0 0" , background: htm.co.th }).width(90).click(tap)} ,
+                                                                                                                          //{pn: "1px" , html: p.lpl=htm("<a htm=lpl>") ), marginLeft : - 30} ,
+                                                                                                                          { } ,
+                                                                                                                          {pn: "16px" , attr:{htm : "lp"} , click: function(){tap(~-htm.p.pa[0])} }  ,
+                                                                                                                          {pn: "100px" , html: p.pa= htm("<a>") , textAlign: "center" } ,
+                                                                                                                          {pn: "16px" , attr:{htm : "pla"} , click: function(){tap(htm.p.pa[0] + 1)} } ,
+                                                                                                                          { }
+                                                                                                                        ]
+                                                                                          })
                                                                                            p.ar.h.css( {marginLeft: "" } )
                                                                                           htm(p.ypr.tl).html("<a htm=h> 详 情 </a>")
                                                                                           htm(p.ypr.rt).html("")
@@ -314,118 +326,127 @@ function ap(p , l){
                                                                                           htm(p.yp.a.rt ).width(~~"")
                                                                                           pl.pla.css("transform" , "")
                                                                                           htm(p.yp.a.tl).css( {marginLeft : ""})
-                                                                                          htm.a.th.contain.contents().map((l,ll)=>htm(ll).html(["<a>商品\t(点触右则<t>深色</t>标题可排序)<ht htm=right></a>", "价格(￥)<htm>","佣金(￥)","最强比率(%)<htm>","月推广<htm>","月派佣(￥)<htm>","优惠券(￥)",""][l]))
-                                                                                          htm.contain(p.ypr.a.rt ,{all:[
-                                                                                                                     {contain: {ty:"|" , all:[ 
-                                                                                                                                              {pn: "1px" , html: p.ypr.a.rt.l= htm("<pl >").css({textAlign: "center"}).html(htm("<a animate>")) },                                                                                                                                                     
-                                                                                                                                              {tag: p.jpg = htm.panhtm.createElement("pl") , html:p.ypr.a.rt.p=htm("<img par>").css({height:  "calc(100% - 20px)" , width: "calc(100% - 20px)" ,  margin:  10 })} 
-                                                                                                                                             ] }   ,
+                                                                                          htm.a.th.lt.contents().map((l,ll)=>htm(ll).html(["<a>商品\t(点触右则<t>深色</t>标题可排序)<ht htm=right></a>", "价格(￥)<htm>","佣金(￥)","最强比率(%)<htm>","月推广<htm>","月派佣(￥)<htm>","优惠券(￥)",""][l]))
+                                                                                          htm.lt(p.ypr.a.rt ,{all:[
+                                                                                                                     {
+                                                                                                                      ty:"|" , 
+                                                                                                                      textAlign: "center" , 
+                                                                                                                      all:[ 
+																																																													 {pn: "1px" , html: p.ypr.a.rt.l= htm("<pl >").css({textAlign: "center"   }).html(htm("<a animate>")) },                                                                                                                                                     
+																																																													 {tag: p.jpg = htm.panhtm.createElement("pl") , html:p.ypr.a.rt.p=htm("<img par>").css({height:  "90%" , width: "90%" ,  marginTop:  "19px" })} 
+																																																													]
                                                                                                                       }    ,
                                                                                                                      {pn: "60px" , textAlign: "center" , tag: p.ypr.a.rt.pl=htm("<pl>")}   ,
-                                                                                                                     {pn: "60px" , textAlign: "center" , contain : {ty:"|" , all:[
-                                                                                                                                                                    {html: p.la = htm("<button blue pyy>").text("进入商品店铺").click(function(lp ,pla){
-                                                                                                                                                                          if(  p.la.text()=="进入商品店铺"){
-                                                                                                                                                                                  np.Window.open("https://item.taobao.com/item.htm?spm=a219t.7900221/10.1998910419.d78498155.eqPvZ5&id=" + p.ypr.a.rt.hl.r[0] , {width: 1000, height: 600})
-                                                                                                                                                                                  return
-                                                                                                                                                                           }
-                                                                                                                                                                          if(  p.la.text()=="ok"){
-                                                                                                                                                                                  //htm.p.ll= eval(p.jpg.ll.val().replace("mm_","[").replace(/\_/g , ",") + "]")
-                                                                                                                                                                                  
-                                                                                                                                                                                  gt.ft("", "pll.tl" , htm.a.jpg.tr.val())
-                                                                                                                                                                                  htm.p.tr= ("<p>" + htm.a.jpg.tr.val().replace(/\n/g , "</p><p>") + "</p>").replace("{图片}" , '<img src="{图片}"') 
-                                                                                                                                                                                  pla=[]
-                                                                                                                                                                                  lp= htm("[l=ok]" , pl.pla.p).toArray()
-                                                                                                                                                                                  
-                                                                                                                                                                                  lp.map(function(l){
-                                                                                                                                                                                                       //if(l.ll?l.ll.图片: "") return  
-                                                                                                                                                                                                       jpg(  "http:" + l.r[ 1 ] + "_300x300.jpg" , l.r[0]   , function(p){
-                                                                                                                                                                                                                l.图片=p    
-                                                                                                                                                                                                                pla.push(p)              
-                                                                                                                                                                                                       })
-                                                                                                                                                                                  })
-                                                                                                                                                                                  
-                                                                                                                                                                                 
-
-                                                                                                                                                                                   htm(p.jpg).html(pl.pl = htm("<iframe width='100%' height='100%' src='a.htm'>"))
-																																																																																									 pl.pl.load(function lpl(){
-																																																																																																					if(pla.length == lp.length){
-                                                                                                                                                                                                            htm("style" , pl.pl.contents()).html(htm("style" , pl.pl.contents()).html().replace(/htm\.(co(?:lor)?)\.(鹊|定|[a-z]*)/g , (aa,l,a)=>htm[l][a]))
-																																																																																																						pl.pl.pl= htm("alt" , pl.pl.contents())
-																																																																																																						pla = lp.map(function(l,pla){
-																																																																																																																 pla = htm.p.tr
-																																																																																																																 l.ll.图片 = l.图片
-																																																																																																																 l.ll.constructor.keys(l.ll).map(a=>pla=pla.replace("{" + a + "}" , l.ll[a]))
-																																																																																																																 return htm("<li>").html(pla).attr("hr" , "http:" + l.r[ 1 ] + "_300x300.jpg")
-																																																																																																						})
-																																																																																																						pl.pl.pl.html(pla)
-																																																																																																						p.la.css("opacity" , ~~"")
-																																																																																																						p.ra.css("opacity" , ~~"")
-																																																																																																						htm.contain(p.ypr.a.rt.pl , {ty:"|", all: [
-																																																																																																																										{html:htm("<input type=button value=用QQ宣传 blue >").click(function(lp){
-																																																																																																																																		 gt.ft(fph + "QQ" , "~这文件夹用来放qq号码","l")
-																																																																																																																																		 np.Shell.showItemInFolder(fph + "QQ\\~这文件夹用来放qq号码")
-																																																																																																																																		 if(prompt("打开你桌面QQ并登录，哪个qq号码或群号码需宣传，便拉他进这个文件夹" , "已经全部放进文件夹")){
-																																																																																																																																			if(prompt("打开登录QQ，但不打开会话窗口"     , "ok")){
-																																																																																																																																			 if(lt= prompt('QQ发信频率，速度（秒/次）, 建议大于或等于10' , "60")){
-																																																																																																																																									 
-																																																																																																																																									 lt= lt ? lt > 1 ? lt * 1000 : 1000 : 10000 
-																																																																																																																																									 pl.qq(lt)
-																																																																																																																																			 }
-																																																																																																																																			}}
-																																																																																																																										 })  ,
-																																																																																																																										 marginTop : 30
-																																																																																																																										} ,
-																																																																																																																									 {html:htm("<input type=button value=用微信宣传 blue >").click(function(){
-																																																																																																																																			 if(lt= prompt('微信发信频率，速度（秒/次）, 建议大于或等于10' , "60")){
-																																																																																																																																											 lt= lt ? lt > 1 ? lt * 1000 : 1000 : 10000
-																																																																																																																																											 pl.qql(lt)
-																																																																																																																																				 }
-																																																																																																																										 })  ,
-																																																																																																																										 marginTop : 30
-																																																																																																																										} ,
-																																																																																																																									 {html:htm('<input type=button value=" 返 回 " blue >').click(function(){
-																																																																																																																																		 htm("[l=ok]" , pl.pla.p).attr("l","")
-																																																																																																																																		 htm("pl",p.map.lf)[3].tap(htm("pl",p.map.lf)[3].textContent)    
-																																																																																																																																		 htm(p.ypr.aa).html("")
-																																																																																																																										})  ,
-																																																																																																																										marginTop : 30
-																																																																																																																									 }]
-																																																																																																						})
-                                                                                                                                                                                                             return
-                                                                                                                                                                                                       }
-                                                                                                                                                                                                       htm("<p>").height(3).animate({height: 100} , 1000 , lpl)
-																																																																																															})
-																																																																																															
-																																																																																										}
-                                                                                                                                                                                                                       
-                                                                                                                                                                                                     
-                                                                                                                                                                                  //})} ,
-                                                                                                                                                                           
-                                                                                                                                                                            /* l=p.ypr.a.rt.p.attr("src")
-                                                                                                                                                                             if( l == "c:/pl/" + p.ypr.a.rt.hl.r[0] + ".jpg"){
-                                                                                                                                                                                           
-                                                                                                                                                                                             return  
-                                                                                                                                                                              }
-                                                                                                                                                                             jpg(p.ypr.a.rt.p.attr("src") , "c:/pl/" + p.ypr.a.rt.hl.r[0] + ".jpg" , function(){
-                                                                                                                                                                                                     htm("[par]").attr("src" , "c:/pl/" + p.ypr.a.rt.hl.r[0] + ".jpg")
-                                                                                                                                                                                                     htm("[pyy]").click()
-                                                                                                                                                                              })*/
-                                                                                                                                                                    })} ,
-                                                                                                                                                                    {html:p.ra=htm("<button blue>").text("加入到推广栏").click(function(){
-                                                                                                                                                                            if(p.ra.text()=="加入到推广栏"){
-                                                                                                                                                                                      pl.al()
-                                                                                                                                                                                      return
-                                                                                                                                                                              }
-                                                                                                                                                                            if(p.ra.text()=="返回"){
-                                                                                                                                                                                 htm("[l=ok]" , pl.pla.p).attr("l","")
-                                                                                                                                                                                 htm("pl",p.map.lf)[3].tap(htm("pl",p.map.lf)[3].textContent)
-                                                                                                                                                                             }
-                                                                                                                                                                    })}
-                                                                                                                                                                   ]}}
+                                                                                                                     {
+                                                                                                                      pn: "60px" , 
+                                                                                                                      textAlign: "center" , 
+                                                                                                                      ty:"|" , 
+                                                                                                                      all:[
+																																																													 {html: p.la = htm("<button pyy>").width(116).text("进入商品店铺").click(function(lp ,pla){
+																																																																	if(  p.la.text()=="进入商品店铺"){
+																																																																					np.Window.open("https://item.taobao.com/item.htm?spm=a219t.7900221/10.1998910419.d78498155.eqPvZ5&id=" + p.ypr.a.rt.hl.r[0] , {width: 1000, height: 600})
+																																																																					return
+																																																																	 }
+																																																																	if(  p.la.text()==" O K "){
+																																																																					gt.ft("", "pll.tl" , p.jpg.tr.val())
+																																																																					htm.p.tr= ("<p>" + p.jpg.tr.val().replace(/\n/g , "</p><p>") + "</p>").replace("{图片}" , '<img src="{图片}"') 
+																																																																					pla=[]
+																																																																					lp= htm("[l=ok]" , pl.pla.p).toArray()
+																																																																					
+																																																																					lp.map(function(l){
+																																																																															 //if(l.ll?l.ll.图片: "") return  
+																																																																															 jpg(  "http:" + l.r[ 1 ] + "_300x300.jpg" , l.r[0]   , function(p){
+																																																																																				l.图片=p    
+																																																																																				pla.push(p)              
+																																																																															 })
+																																																																					})
+																																																																					
+																																																																				 htm(p.jpg).html(pl.pl = htm("<iframe width='100%' height='100%' src='a.htm'>"))
+																																																																					 pl.pl.load(function lpl(){
+																																																																					                        pl.pl.pl ? "" : (pl.pl.pl = htm("alt" , pl.pl.contents())).html(htm("<p>").html("<htm htm=hn animate>").css( {textAlign: "center" ,  zoom: 6 , color: htm.color.htm , lineHeight: pl.pl.height()* 0.91 / 6 + "px" } ))
+																																																																																	if(pla.length == lp.length){
+																																																																																		htm("style" , pl.pl.contents()).html(htm("style" , pl.pl.contents()).html().replace(/htm\.(co(?:lor)?)\.(鹊|定|[a-z]*)/g , (aa,l,a)=>htm[l][a]))
+																																																																																		pla = lp.map(function(l,pla){
+																																																																																												 pla = htm.p.tr
+																																																																																												 l.ll.图片 = l.图片
+																																																																																												 l.ll.constructor.keys(l.ll).map(a=>pla=pla.replace("{" + a + "}" , l.ll[a]))
+																																																																																												 return htm("<li>").html(pla).attr("hr" , "http:" + l.r[ 1 ] + "_300x300.jpg")
+																																																																																		})
+																																																																																		pl.pl.pl.html(pla)
+																																																																																		p.la.css("opacity" , ~~"")
+																																																																																		p.ra.css("opacity" , ~~"")
+																																																																																		htm.lt(p.ypr.a.rt.pl ,{
+																																																																																		                       ty:"|", 
+																																																																																		                       all: [
+																																																																																																	{html:htm("<button >").width(100).text("用QQ宣传").click(function(lp){
+																																																																																																									 gt.ft(fph + "QQ" , "~这文件夹用来放qq号码","l")
+																																																																																																									 np.Shell.showItemInFolder(fph + "QQ\\~这文件夹用来放qq号码")
+																																																																																																									 if(prompt("打开你桌面QQ并登录，哪个qq号码或群号码需宣传，便拉他进这个文件夹" , "已经全部放进文件夹")){
+																																																																																																										if(prompt("打开登录QQ，但不打开会话窗口"     , "ok")){
+																																																																																																										 if(ttl= prompt('QQ发信频率，速度（秒/次）, 建议大于或等于10' , "60")){
+																																																																																																																 
+																																																																																																																 ttl= ttl ? ttl > 1 ? ttl * 1000 : 1000 : 10000 
+																																																																																																																 pl.qq(ttl)
+																																																																																																										 }
+																																																																																																										}}
+																																																																																																	 })  ,
+																																																																																																	 marginTop : 30
+																																																																																																	} ,
+																																																																																																 {html:htm("<button >").width(100).text("用微信宣传").click(function(){
+																																																																																																										 if(ttl= prompt('微信发信频率，速度（秒/次）, 建议大于或等于10' , "60")){
+																																																																																																																		 ttl= ttl ? ttl > 1 ? ttl * 1000 : 1000 : 10000
+																																																																																																																		 pl.qql(ttl)
+																																																																																																											 }
+																																																																																																	 })  ,
+																																																																																																	 marginTop : 30
+																																																																																																	} ,
+																																																																																																 {html:htm("<button >").width(100).text(" 返 回 " ).click(function(){
+																																																																																																									 htm("[l=ok]" , pl.pla.p).attr("l","")
+																																																																																																									 htm("pl",p.map.lf)[3].tap(htm("pl",p.map.lf)[3].textContent)    
+																																																																																																									 htm(p.ypr.aa).html("")
+																																																																																																	})  ,
+																																																																																																	marginTop : 30
+																																																																																																 }]
+																																																																																		})
+																																																																																		 return
+																																																																															   }
+																																																																															   
+																																																																															   htm("<p>").height(3).animate({height: 100} , 1000 , lpl)
+																																																																											})
+																																																																											
+																																																																						}
+																																																																																							 
+																																																																														 
+																																																																					//})} ,
+																																																																	 
+																																																																		/* l=p.ypr.a.rt.p.attr("src")
+																																																																		 if( l == "c:/pl/" + p.ypr.a.rt.hl.r[0] + ".jpg"){
+																																																																									 
+																																																																										 return  
+																																																																			}
+																																																																		 jpg(p.ypr.a.rt.p.attr("src") , "c:/pl/" + p.ypr.a.rt.hl.r[0] + ".jpg" , function(){
+																																																																														 htm("[par]").attr("src" , "c:/pl/" + p.ypr.a.rt.hl.r[0] + ".jpg")
+																																																																														 htm("[pyy]").click()
+																																																																			})*/
+																																																														})} ,
+																																																														{html:p.ra=htm("<button>").width(116).text("加入到推广栏").click(function(){
+																																																																		if(p.ra.text()=="加入到推广栏"){
+																																																																							pl.al()
+																																																																							return
+																																																																			}
+																																																																		if(p.ra.text()=="返回"){
+																																																																				 htm("[l=ok]" , pl.pla.p).attr("l","")
+																																																																				 htm("pl",p.map.lf)[3].tap(htm("pl",p.map.lf)[3].textContent)
+																																																																		 }
+																																																														})}
+																																																													 ]}
                                                                                                                           ]})
+                                                                                                                          
+                                                                                                                          htm(p.yp.tl).text()== " 商 品 " | htm(p.yp.tl).text()== " 鹊 桥 " ?  tap() : ""
                                                                             }
                                                                         } ,
                                                                        {
+                                                                         pn: "100px" ,
                                                                          html: "<a htm=ch> 鹊 桥 </a>" ,
                                                                          tap: p.tap
                                                                         } ,
@@ -452,21 +473,45 @@ function ap(p , l){
                                                                          
                                                                          
                                                                         
-                                                                        {
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                      {
+                                                                         pn: "100px" ,
                                                                          html: "<a htm=hn> 推 广 </a>" ,
                                                                          tap:  function(a , aa){
                                                                                           p.tap()
-                                                                                          p.rpy.contain.animate( [ "16px" , 22 , "26px" , 11 , "16px" ] )
+                                                                                          p.rpy.lt.animate( [ 22 , "22px" , 11 ] )
                                                                                           htm(p.yp.tl).html("<a htm=hn>" + a + "</a>")
-                                                                                          htm(p.yp.tt).html('"制作推广专页"入口')
+                                                                                          //htm(p.yp.tt).html('"制作推广专页"入口')
                                                                                           htm(p.ypr.tl).html("<a htm=h> 详 情 </a>")
                                                                                           htm(p.ypr.rt).html("")
                                                                                           htm(p.yp.a.tl ).width("100%")
-                                                                                          htm.a.th.contain.contents().map((l,ll)=>htm(ll).text(["商品\t(鼠标左键+Alt可删除商品)", "价格(￥)","收入比率(%)","最强比率(%)","月推广","月派佣(￥)","全部",""][l]))
+                                                                                          htm.a.th.lt.contents().map((l,ll)=>htm(ll).text(["商品\t(鼠标左键+Alt可删除商品)", "价格(￥)","收入比率(%)","最强比率(%)","月推广","月派佣(￥)","全部",""][l]))
                                                                                           htm(p.yp.a.rt ).width(~~"")
                                                                                           pl.pla.css("transform" , "")
                                                                                           htm(p.yp.a.tl).css( {marginLeft : ""}) 
-                                                                                     p.ar.h.css( {marginLeft: ~ pl.pla.width() , width : p.ar.width() })
+                                                                                     p.ar.h.css( {marginLeft: ~ (pl.pla.width() + 2) , width : p.ar.width() })
                                                                                      
                                                                                                          
                                                                                                          aa=[]
@@ -479,7 +524,7 @@ function ap(p , l){
                                                                                                                      p.ll=l.ll
                                                                                                                      l=l.map((a,aa)=> aa ? (aa==2 | aa==3) ? {html: ("<t>" + a + "</t>").replace(/鹊\<\/t\>/ , "</t><tl><ttl>鹊</ttl></tl>").replace(/定\<\/t\>/ , "</t><tl green><ttl>定</ttl></tl>") }
                                                                                                                                                       : {text: a} : {pn: 6 , text : a} )
-                                                                                                                     htm.contain(p  , {ty: "|" , all:l })
+                                                                                                                     htm.lt(p  , {ty: "|" , all:l })
                                                                                                                         htm(p.a6).html("<input type=checkbox>")
                                                                                                                       aa.push(p)
                                                                                                                  }
@@ -489,57 +534,72 @@ function ap(p , l){
                                                                                                         htm("li [type=checkbox]" ,   pl.pla.p).css("pointer-events" , "auto")
                                                                                                         htm("htm",htm.a.th).attr("htm","")
                                                                                      //a()
-                                                                                        htm(p.yp.rt).html(htm("<pl>").css( {textAlign: "left" }).html(htm( "<button blue>储存以及设置</button>").click(function (aa , t){
-																																																								aa=[]
-																																																								htm.p.all.constructor.keys(htm.p.all).map(function(l){
-																																																										 
-																																																										 if(l=htm.p.all[l]){
-																																																													 aa.push('{l:["' +  l.l.join('","') + '"] , a:["' + l.join('","')  + '"] , ll:{' +  l.ll.constructor.keys(l.ll).map(a=>a + ':"' + l.ll[a] + '"') + '}}')
-																																																											}
-																																																								})
-																																																								localStorage["l"] =  "[" + aa + "]"
+                                                                                        htm.lt(p.yp.tt , {ty:"|" , all:[
+                                                                                                                         { } ,
+                                                                                                                         {pn: "122px" , html: htm( "<button>储存以及设置</button>").click(function (aa , t){
+																																																																								aa=[]
+																																																																								htm.p.all.constructor.keys(htm.p.all).map(function(l){
+																																																																										 
+																																																																										 if(l=htm.p.all[l]){
+																																																																													 aa.push('{l:["' +  l.l.join('","') + '"] , a:["' + l.join('","')  + '"] , ll:{' +  l.ll.constructor.keys(l.ll).map(a=>a + ':"' + l.ll[a] + '"') + '}}')
+																																																																											}
+																																																																								})
+																																																																								localStorage["l"] =  "[" + aa + "]"
 
-																																																								if(htm("[l=ok]" , pl.pla.p).length){  
-																																																												htm("li [type=checkbox]" , pl.pla.p).css("pointer-events" , "")
-																																																													htm(p.ypr.tl).html("<a htm=lg> 设 置 </a>")
-																																																													htm(p.jpg).css( {transform: "translateY(1px)" , background: htm.co.contain})
-																																																													p.la.text("ok")
-																																																													p.ra.text("返回")
-																																																												 p.ypr.a.rt.pl.html("")
-																																																																							//l=[]
-																																																																							//aa.responseText.replace(/adzonePid\"\:\"(mm(?:\_[0-9]*)*?)\"/g, (aa,a)=>l=l.concat(a))
-																																																													 htm.contain(p.jpg, {all:[
-																																																																									{pn:"60px" , html:"<h3>宣传图文设置<h3>" , marginTop: "11px"} ,
-																																																																									{pn:"2px" , html:"<hr>"} ,
-																																																																									{pn:"60px" , html:"插入:<label>{图片}</label> ,<label>{标题}</label> ,<label>{价格}</label> ，<label>{合长链}</label>,<label>{长链} </label>，<label>{合淘口令}</label> , <label>{淘口令}</label> , <label>{二维码}</label> , <label>{合链}</label> , <label>{链}</label> , <label>{厂商价}</label> " } ,
-																																																																									{pn:"26px" , html:"注意：若商品提供优惠券，那{合长链},{合链}和{合淘口令} 为二合一链"} ,
-																																																																									{html: p.jpg.tr = htm("<textarea>").width(300).height("90%").text((p.jpg.tr =gt.ft("", "pll.tl")) ? p.jpg.tr   : "{图片}\n{标题}\n 厂商价:【￥{厂商价}】\n 抢购价:【￥{价格}】\n 内部优惠入口:{合链}\n=========================================\n想拿到更多更多优惠,欢迎访问淘多惠专页:                                                   \nhttp://taodh.net/aaa，\n客服QQ: " )}
-																																																																								 ]
-																																																																})
-																																																																htm(">*",p.jpg).css( "marginLeft"  , 6 )
-																																																													 return
-																																																									 }
-																																																									 alert("你未选择商品")
-																																																									 //htm("pl",p.map.lf)[3].tap()
-																																												 })))
+																																																																								if(htm("[l=ok]" , pl.pla.p).length){  
+																																																																												htm("li [type=checkbox]" , pl.pla.p).css("pointer-events" , "")
+																																																																													htm(p.ypr.tl).html("<a htm=lg>宣传图文设置</a>")
+																																																																													htm(p.jpg).css( {transform: "translateY(1px)" , background: htm.co.lt})
+																																																																													p.la.text(" O K ")
+																																																																													p.ra.text("返回")
+																																																																												 p.ypr.a.rt.pl.html("")
+																																																																																							//aa.responseText.replace(/adzonePid\"\:\"(mm(?:\_[0-9]*)*?)\"/g, (aa,a)=>l=l.concat(a))
+																																																																													 htm.lt(p.jpg, {
+																																																																													                ty: "|" ,
+																																																																													                all:[
+																																																																													                      {pn: "10px" } ,
+																																																																													                      { 
+																																																																													                       textAlign: "left" ,
+																																																																													                       all:[
+																																																																																											{pn:"2px" , html:"<hr>"} ,
+																																																																																											{pn: "11px"} ,
+																																																																																											{pn:"60px" , html:"插入:<a>{图片}</a>,<a>{标题}</a>,<a>{价格}</a>,<a>{合长链}</a>,<a>{长链}</a>,<a>{合淘口令}</a>,<a>{淘口令}</a>,<a>{二维码}</a>,<a>{合链}</a>,<a>{链}</a>,<a>{厂商价}</a>" } ,
+																																																																																											{pn:"26px" , html:"注意:若商品提供优惠券,那<a>{合长链}</a>,<a>{合链}</a>和<a>{合淘口令}</a> 为二合一链"} ,
+																																																																																											{html: p.jpg.tr = htm("<textarea>").width("90%").height("90%").text((p.jpg.tr =gt.ft("", "pll.tl")) ? p.jpg.tr   : "{图片}\n{标题}\n 厂商价:【￥{厂商价}】\n 抢购价:【￥{价格}】\n 内部优惠入口:{合链}\n=========================================\n想拿到更多更多优惠,欢迎访问淘多惠专页:                                                   \nhttp://taodh.net/aaa，\n客服QQ: " )}
+																																																																																										 ]
+																																																																													                      } ,
+																																																																													                      {pn: "10px" }
+																																																																													                    ]
+																																																																													                   
+																																																																																})
+																																																																																htm("a",p.jpg).css( { color : htm.color.lttl , font: "900 100% htm" } )
+																																																																													 return
+																																																																									 }
+																																																																									 alert("你未选择商品")
+																																																																									 //htm("pl",p.map.lf)[3].tap()
+																																																												                     }) 
+																																																												 } ,
+                                                                                                                         {pn: "30px"}
+                                                                                                                       ]
+                                                                                        })
                                                                          }
                                                                         } ,
                                                                        
-                                                                       
                                                                        {
+                                                                         pn: "100px" ,
                                                                          html: "<a htm=h> 利 润 </a>" ,
                                                                           tap:     function(l , lh){
-                                                                                                   p.rpy.contain.animate( [ "30px" , 100 , "30px" , "1px" , "1px" ] )
+                                                                                                   p.rpy.lt.animate( [ 100 , "1px" , "1px" ] )
                                                                                                    htm(p.yp.tl).html(htm("<a htm=h> 利 润 </a>").css( {float : "left" , width: 200 } ))
                                                                                                    htm(p.yp.tt).html("")
-                                                                                                   htm(p.yp.rt).html("")
                                                                                                    htm(p.ypr.tl).html("")
                                                                                                    htm(p.ypr.rt).html("")
                                                                                                    //pl.pla.css( {    transform : "translateY(-60px)"})
                                                                                                    //htm(p.yp.a.tl).css( {marginLeft : ""})
                                                                                                    //pl.pla.p.html(l= htm("<label >").html(htm("<htm htm=hn animate>")).css( {float:  "left" , transform  : "scale(10)" } ))
                                                                                                    //l.css( "margin" , (pl.pla.height() - l.height())/ 2 + "px " + (pl.pla.width() - l.width()) / 2 + "px" )
-                                                                                                   lh= htm("iframe" , p.yp.aa)
+                                                                                                   lh=htm("iframe" , p.yp.aa)
+                                                                                                   lh.attr( "src" , lh.attr("src") + "#")
                                                                                                    l=(a)=> htm("<pl>").height(3).animate({height: 100} ,100 ,function(ll){
                                                                                                                      ll=htm("th" , lh.contents()).text() ? htm("#alimama-footer" , lh.contents()).text() : ""
                                                                                                                      if(ll ? "a" : a >= 100 ){
@@ -550,13 +610,14 @@ function ap(p , l){
                                                                                                                                   htm(".message-trigger, .message-panel, .wxrobot-trigger, #muxfb-global-emitter" , lh.contents()).css( "right" , lh.width() + 200 )
 
                                                                                                                                   htm("#alimama-footer" , lh.contents()).css("transform" , "translateX(-9000px)")
-                                                                                                                                  htm(".wrapper" , lh.contents()).width(lh.width() + 200)
+                                                                                                                                  htm(".wrapper" , lh.contents()).width(  lh.width() + 200)
                                                                                                                                   htm(".table" , lh.contents()).height(lh.height() - 290)
                                                                                                                                   htm("th" , lh.contents()).map((l,ll)=>htm(ll).text(htm(ll).text()))
                                                                                                                                   htm(".tip" , lh.contents()).text("")
                                                                                                                                   htm(".main~*" , lh.contents()).contents().contents("ul").width(3)
                                                                                                                                   //htm(p.yp.a.tl).css( {marginLeft : - px})
                                                                                                                                   //pl.pla.p.html("")
+                                                                                                                                  htm(htm("vframe" , lh.contents())[2]).contents().contents("*")[2].textContent=""
                                                                                                                                   htm("li:contains(订单付款)", lh.prop("contentDocument")).click()
 																																																																	htm("<pl>").height(3).animate({height: 100} ,300 , ()=>
 																																																																	htm("li:contains(全部订单)", lh.prop("contentDocument")).click())
@@ -571,204 +632,332 @@ function ap(p , l){
                                                                                                    
                                                                                    }
                                                                         } ,
-                                                                       
-                                                                       
-                                                                       
-                                                                       {html: '<a htm=lg> 设 置 </a>' ,
-                                                                          tap:     function(a , aa){
+                                                                       {
+                                                                         pn: "100px" ,
+                                                                         html: '<a htm=lg> 设 置 </a>' ,
+                                                                         tap:     function(a , aa){
                                                                                                    htm(p.yp.tl).html(htm("<a htm=h> 设 置 </a>").css( {float : "left" , width: 200 } ))
-                                                                                                   p.rpy.contain.animate( [ "30px" , 100 , "30px" , "1px" , "1px" ] )
-                                                                                                   htm(p.yp.rt).html("")
+                                                                                                   p.rpy.lt.animate( [ 100 , "1px" , "1px" ] )
                                                                                                    htm(p.ypr.tl).html("")
                                                                                                    htm(p.ypr.rt).html("")
                                                                                                    pl.pla.css( {    transform : "translateY(-60px)"})
                                                                                                    htm(p.yp.a.tl).css( {marginLeft : ""})
                                                                                                    htm(p.yp.tt).html(aa=htm("<pl>"))
-                                                                                                   htm.contain(aa.css( "margin" , 10) ,{ty:"|" , all:{
-                                                                                                                                                        l:{pn: "100px" , html:htm('<input type=button value=" 储 存 " blue >').click(function(l){
-                                                                                                                                                                              gt.ft("" , "color.htm" , l = "htm.co = {" + [].map.apply(htm("input[l]" , pl.pla.p) , [(a=> htm(a).attr("l") + ":'" + a.value + "'") ]) + "} , htm.color = {" + [].map.apply(htm("input[t]" , pl.pla.p) , [(a=> htm(a).attr("t") + ":'" + a.value + "'") ]) + "} , htm.tt = '" + htm("textarea",pl.pla.p).val() + "'")
-                                                                                                                                                                              htm(aa.t).text("储存设置成功")
-                                                                                                                                                                              
-                                                                                                                                                                              
-                                                                                                                                                                              
-                                                                                                                                                                              
-                                                                                                                                                                              eval(l)
-                                                                                                                                                                              gt.ft("", "pl.htm").replace(/\{(?:.|\r|\n)*\}/ , a=> l=a)
-                                                                                                                                                                              htm("style").html(l.replace(/htm\.(co(?:lor)?)\.([a-z]*)/g , (aa,l,a)=>htm[l][a]))
-                                                                                                                                                                              gt.ft("", "a.htm").replace(/\{(?:.|\r|\n)*\}/ , a=> l=a)
-                                                                                                                                                                              htm("style" , pl.pla.contents()).html(l.replace(/htm\.(co(?:lor)?)\.([a-z]*)/g , (aa,l,a)=>htm[l][a]))
-                                                                                                                                                                             pl.pn()
-                                                                                                                                                           })} ,
-                                                                                                                                                        t:{tag:"<label>"  , lineHeight: "30px"}
-                                                                                                                                                       }
+                                                                                                   htm.lt(aa ,{ty:"|" ,all:{
+                                                                                                                            t:{} ,
+																																																														l:{pn: "100px" , html:htm('<button>').text(" 储 存 ").click(function(l){
+																																																																									gt.ft("" , "color.htm" , l = "htm.co = {" + [].map.apply(htm("input[l]" , pl.pla.p) , [(a=> htm(a).attr("l") + ":'" + a.value + "'") ]) + "} , htm.color = {" + [].map.apply(htm("input[t]" , pl.pla.p) , [(a=> htm(a).attr("t") + ":'" + a.value + "'") ]) + "} , htm.tt = '" + htm("textarea",pl.pla.p).val() + "'" ) //       (a.ll.val() ? ", htm.ll = " +  a.ll.val().replace("  mm_","[").replace(/\_/g , ",") + "]" : "") 
+																																																																									     htm.ll= eval(a.ll.val().replace("  mm_","[").replace(/\_/g , ",") + "]")
+																																																																									htm(aa.t).text("储存设置成功")
+																																																																									
+																																																																									
+																																																																									
+																																																																									
+																																																																									
+																																																																									eval(l)
+																																																																									gt.ft("", "pl.htm").replace(/\{(?:.|\r|\n)*\}/ , a=> l=a)
+																																																																									htm("style").html(l.replace(/htm\.(co(?:lor)?)\.([a-z]*)/g , (aa,l,a)=>htm[l][a]))
+																																																																									gt.ft("", "a.htm").replace(/\{(?:.|\r|\n)*\}/ , a=> l=a)
+																																																																									htm("style" , pl.pla.contents()).html(l.replace(/htm\.(co(?:lor)?)\.([a-z]*)/g , (aa,l,a)=>htm[l][a]))
+																																																																								 pl.pn()
+																																																															 })}
+																																																													 }
                                                                                                     })
-                                                                                                   //pl.pla.attr("src") == "a.htm" ? pl.pla.p.html("")    : pl.pla.attr("src",  "a.htm")
-                                                                                                   //a=()=> htm("<pl>").height(3).animate({height: 100} ,100 , function(al , aa){
-                                                                                                              //al=pl.pla.prop ? htm("alt" , pl.pla.prop("contentDocument")).length : ""
-                                                                                                              //if(al){
-                                                                                                                      pl.pla.p = htm("alt" , pl.pla.prop("contentDocument"))
-                                                                                                                      pl.pla.p.html([
-                                                                                                                                      "<h3>定向审核范文</h3>" ,
-                                                                                                                                      htm("<textarea>").val(htm.tt).width(300) ,
-                                                                                                                                      "<hr>",
-                                                                                                                                      "<h3>背景色配色</h3>" ,
-                                                                                                                                      "<p><a>软件:</a><input type=color l=htm value='" + htm.co.htm + "'></p>" ,
-                                                                                                                                      "<p><a>最上部:</a><input type=color l=top value='" + htm.co.top + "'></p>" ,
-                                                                                                                                      "<p><a>左部导向条:</a><input type=color l=left value='" + htm.co.left + "'></p>" ,
-                                                                                                                                      "<p><a>左部导向鼠标悬浮:</a><input type=color l=lefthover value='" + htm.co.lefthover + "'></p>" ,
-                                                                                                                                      "<p><a>主区域:</a><input type=color l=contain value='" + htm.co.contain + "'></p>" ,
-                                                                                                                                      "<p><a>主区域标题条:</a><input type=color l=containtl value='" + htm.co.containtl + "'></p>" ,
-                                                                                                                                      "<p><a>利润域:</a><input type=color l=money value='" + htm.co.money + "'></p>" ,
-                                                                                                                                      "<p><a>商品表格标题条:</a><input type=color l=thall value='" + htm.co.thall + "'></p>" ,
-                                                                                                                                      "<p><a>商品表格标题:</a><input type=color l=th value='" + htm.co.th + "'></p>" ,
-                                                                                                                                      "<p><a>弹窗:</a><input type=color l=pl value='" + htm.co.pl + "'></p>" ,
-                                                                                                                                      "<p><a>输入框:</a><input type=color l=input value='" + htm.co.input + "'></p>" ,
-                                                                                                                                      "<p><a>鹊桥:</a><input type=color l=鹊 value='" + htm.co.鹊 + "'></p>" ,
-                                                                                                                                      "<p><a>定向:</a><input type=color l=定 value='" + htm.co.定 + "'></p>" ,
-                                                                                                                                      "<p><a>商品条:</a><input type=color l=lieven value='" + htm.co.lieven + "'></p>" ,
-                                                                                                                                      "<p><a>宣传商品条:</a><input type=color l=li value='" + htm.co.li + "'></p>" ,
-                                                                                                                                      "<p><a>商品条鼠标点触:</a><input type=color l=hoverli value='" + htm.co.hoverli + "'></p>",
-                                                                                                                                      "<hr>",
-                                                                                                                                      "<h3>文字配色</h3>" ,
-                                                                                                                                      "<p><a>软件:</a><input type=color t=htm value='" + htm.color.htm + "'></p>" ,
-                                                                                                                                      "<p><a>最上部:</a><input type=color t=top value='" + htm.color.top + "'></p>" ,
-                                                                                                                                      "<p><a>左部导向条:</a><input type=color t=left value='" + htm.color.left + "'></p>" ,
-                                                                                                                                      "<p><a>左部导向鼠标点触:</a><input type=color t=lefton value='" + htm.color.lefton + "'></p>" ,
-                                                                                                                                      "<p><a>旋转圈动画:</a><input type=color t=animate value='" + htm.color.animate + "'></p>" ,
-                                                                                                                                      "<p><a>标签:</a><input type=color t=label value='" + htm.color.label + "'></p>" ,
-                                                                                                                                      "<p><a>主区域:</a><input type=color t=contain value='" + htm.color.contain + "'></p>" ,
-                                                                                                                                      "<p><a>主区域标题条:</a><input type=color t=containtl value='" + htm.color.containtl + "'></p>" ,
-                                                                                                                                      "<p><a>推广商品条:</a><input type=color t=li value='" + htm.color.li + "'></p>" ,
-                                                                                                                                      "<p><a>鹊桥:</a><input type=color t=鹊 value='" + htm.color.鹊 + "'></p>" ,
-                                                                                                                                      "<p><a>定向:</a><input type=color t=定 value='" + htm.color.定 + "'></p>" ,
-                                                                                                                                      "<p><a>输入框:</a><input type=color t=input value='" + htm.color.input + "'></p>" ,
-                                                                                                                                      "<p><a>商品表格标题条:</a><input type=color t=thall value='" + htm.color.thall + "'></p>" 
-                                                                                                                                   ])
+                                                                                                   htm.lt(htm("alt" , pl.pla.prop("contentDocument")).width("100%").height(1000) , {ty:"|" , all:[
+                                                                                                                                                                      {pn: "30px" } ,
+                                                                                                                                                                      {html:[ 
+																																																																																							"<h3>定向审核范文</h3>" ,
+																																																																																							htm("<pl>").height(300).html(htm("<textarea>").val(htm.tt).width(300)) ,
+																																																																																							"<hr>",
+																																																																																							"<h3>背景色配色</h3>" ,
+																																																																																							"<p><a>软件:</a><input type=color l=htm value='" + htm.co.htm + "'></p>" ,
+																																																																																							"<p><a>最上部:</a><input type=color l=top value='" + htm.co.top + "'></p>" ,
+																																																																																							"<p><a>左部导向条:</a><input type=color l=left value='" + htm.co.left + "'></p>" ,
+																																																																																							"<p><a>左部导向鼠标悬浮:</a><input type=color l=lefthover value='" + htm.co.lefthover + "'></p>" ,
+																																																																																							"<p><a>主区域:</a><input type=color l=lt value='" + htm.co.lt + "'></p>" ,
+																																																																																							"<p><a>主区域标题条:</a><input type=color l=lttl value='" + htm.co.lttl + "'></p>" ,
+																																																																																							"<p><a>按钮:</a><input type=color   l=button value='" + htm.co.button + "'></p>" ,
+																																																																																							"<p><a>商品表格标题条:</a><input type=color l=thall value='" + htm.co.thall + "'></p>" ,
+																																																																																							"<p><a>商品表格标题:</a><input type=color l=th value='" + htm.co.th + "'></p>" ,
+																																																																																							"<p><a>弹窗:</a><input type=color l=pl value='" + htm.co.pl + "'></p>" ,
+																																																																																							"<p><a>输入框:</a><input type=color l=text value='" + htm.co.text + "'></p>" ,
+																																																																																							"<p><a>鹊桥:</a><input type=color l=鹊 value='" + htm.co.鹊 + "'></p>" ,
+																																																																																							"<p><a>定向:</a><input type=color l=定 value='" + htm.co.定 + "'></p>" ,
+																																																																																							"<p><a>商品条:</a><input type=color l=li value='" + htm.co.li + "'></p>" ,
+																																																																																							"<p><a>宣传商品条:</a><input type=color l=tli value='" + htm.co.tli + "'></p>" ,
+																																																																																							"<p><a>商品条鼠标点触:</a><input type=color l=hoverli value='" + htm.co.hoverli + "'></p>"
+                                                                                                                                                                            ]
+                                                                                                                                                                      } ,
+                                                                                                                                                                      {pn: "19px"} , 
+                                                                                                                                                                      {pn: "2px" , } ,
+                                                                                                                                                                      {pn: "19px" } ,
+                                                                                                                                                                      {html:[
+                                                                                                                                                                             "<h3>联盟pid</h3>" ,
+                                                                                                                                                                               a = htm("<pl>").width(300).height(300).html(p.hh) ,
+                                                                                                                                                                              "<hr>",
+																																																																																							"<h3>文字配色</h3>" ,
+																																																																																							"<p><a>软件:</a><input type=color t=htm value='" + htm.color.htm + "'></p>" ,
+																																																																																							"<p><a>最上部:</a><input type=color t=top value='" + htm.color.top + "'></p>" ,
+																																																																																							"<p><a>左部导向条:</a><input type=color t=left value='" + htm.color.left + "'></p>" ,
+																																																																																							"<p><a>左部导向鼠标点触:</a><input type=color t=lefton value='" + htm.color.lefton + "'></p>" ,
+																																																																																							"<p><a>旋转圈动画:</a><input type=color t=animate value='" + htm.color.animate + "'></p>" ,
+																																																																																							"<p><a>标签:</a><input type=color t=label value='" + htm.color.label + "'></p>" ,
+																																																																																							"<p><a>主区域:</a><input type=color t=lt value='" + htm.color.lt + "'></p>" ,
+																																																																																							"<p><a>主区域标题条:</a><input type=color t=lttl value='" + htm.color.lttl + "'></p>" ,
+																																																																																							"<p><a>按钮:</a><input type=color   t=button value='" + htm.color.button + "'></p>" ,
+																																																																																							"<p><a>商品条:</a><input type=color t=li value='" + htm.color.li + "'></p>" ,
+																																																																																							"<p><a>推广商品条:</a><input type=color t=tli value='" + htm.color.tli + "'></p>" ,
+																																																																																							"<p><a>鹊桥:</a><input type=color t=鹊 value='" + htm.color.鹊 + "'></p>" ,
+																																																																																							"<p><a>定向:</a><input type=color t=定 value='" + htm.color.定 + "'></p>" ,
+																																																																																							"<p><a>输入框:</a><input type=color t=text value='" + htm.color.text + "'></p>" ,
+																																																																																							"<p><a>商品表格标题条:</a><input type=color t=thall value='" + htm.color.thall + "'></p>" ,
+																																																																																							"<p><a>收入域:</a><input type=color t=money value='" + htm.color.money + "'></p>"
+                                                                                                                                                                            ]
+                                                                                                                                                                     } ,
+                                                                                                                                                                      { pn: "30px" } ,
+                                                                                                                                                                     ]}
+                                                                                                   )
+                                                                                                   
+                                                                                                   htm.lt(a , {all:[
+                                                                                                                    { pn: "33px" ,
+                                                                                                                      ty: "|" ,
+																																																											 all:[
+																																																														 {pn: "262px" , html: a.ll = htm("<input type=text>").width(300).val("  mm_" + htm.ll.join("_") ).height(33) } ,
+																																																														 {attr:{htm: "pla"} , lineHeight:"33px"}
+																																																													 ]  ,
+                                                                                                                      click :function(){
+																																																																					htm(a.a1).html(p.hh.html())
+																																																																          htm("li" ,a.a1).click(function(l){
+																																																																																						 l=l.originalEvent.srcElement
+																																																																																						 a.ll.val("  " +     l.textContent)
+																																																																																						 htm(a.a1).html("")
+																																																																					 })
+																																																																					return !" "
+																																																								             }  
+                                                                                                                     } ,
+                                                                                                                    {textAlign: "center" }
+                                                                                                                   ]}
+                                                                                                   )
                                                                                    }
                                                                         }
-                                                                       ]
-                                                                      } ,
+                                                                 ] ,
                                                                  textAlign: "center"
                                                           },
-                                                     rp: {}
+                                                     rp: {
+                                                          all:[
+																															 {pn: " 6px" , background: "#FF960A" } , 
+																															 {
+																																	ty:"|",
+																																	all: [
+																																				 {pn:"19px"} ,
+																																				 { } ,
+																																				 {pn:   "19px"}
+																																			 ]
+																															}
+																														 ]
+                                                        }
                                                     }
-                                                }
                                     }
           }})
-
-         htm.contain(p.map.rp ,{
+         
+         p.map.rp = p.map.rp.a1.a1
+         htm.lt(p.map.rp ,{
                                 all:{
+                                     ly:{pn: "16px"} ,
                                      pf:{
-                                         pn: "100px" ,
-                                        contain: {ty:"|" ,
-                                                  all: {l: {pn: "30px"} ,
-                                                        aaa: {pn: "100px" , html: pl.aaa=htm("<img>").attr("src" , "http:" + htm.aa) .width(100).height(100)} , //"https://wwc.alicdn.com/avatar/getAvatar.do?width=100&height=100&type=sns"
-                                                        yy: {pn:   "200px" , html: htm.tl + " ,欢迎你" , attr:{color: "green"} ,  marginLeft: 10 , lineHeight: "100px"} ,
-                                                        aal: {
-                                                              pn: 3 ,
-                                                             contain: {ty:"|",
-                                                                       all:{
-                                                                            l:{html: htm("<pl>").html(["<p>今天效果:<a></a></p>" , "<label>" ]).css( {margin: 10 , width: "90%" , background: htm.co.money , height: "90%" }).corner("100px") } ,
-                                                                            p:{html: htm("<pl>").html(["<p>30天效果:<a></a></p>" , "<label>" ]).css( {margin: 10 , width: "90%" , background: htm.co.money , height: "90%" }).corner("100px") } ,
-                                                                            lp:{html: htm("<pl>").html(["<p>30天收入</p>" , "<label>" ]).css( {margin: 10 , width: "90%" , background: htm.co.money , height: "90%" }).corner("100px") }
-                                                                          }
-                                                                     } ,
-                                                             textAlign: "center"
-                                                            } ,
-                                                        pay: {
-                                                              contain: {all:[
-                                                                             {html:htm("<button blue>进入alimama提款</button>").click(()=> open('https://media.alimama.com/account/account.htm')) } ,
-                                                                             {html: p.hh= htm("<pl>")}
-                                                                       
-                                                                            ]} ,
-                                                             
-                                                             textAlign: "center" , 
-                                                             lineHeight: "51px"
-                                                            } ,
-                                                          ll: {pn: "30px"}
-                                                      }
-                                                }
+                                         pn: "190px" ,
+																				 background:   htm.co.lttl   ,
+																					tag:htm("<pla>").corner() ,
+																				  all:[
+																							 { 
+																							  pn:  "33px", 
+																							 
+																							   tag: htm.panhtm.createElement("pl") ,  
+																							  lineHeight:  "33px" ,
+																							  html: htm("<a>￥ 个人收入</a>").css( {lineHeight:  "33px" , "zoom": 0.9 })
+																						  } ,
+																							//{pn: "2px" , html:"<hr/>"} ,
+																							{
+																							  all:[
+																										 {pn: "16px"} ,
+																										 {
+																											 font: "900 100%/122px htm" ,
+																											 tag:   htm.panhtm.createElement("pl") ,
+																											 ty: "|" ,
+																											 pn: "122px" ,
+																											 all: {
+																															l: {pn: "30px"} ,
+																															aaa: {pn: "122px" , all:{ly:{}, aal:{pn:"100px" , html: pl.aaa=htm("<img>").attr("src" , "http:" + htm.aa).height("100%").corner("60px") , lineHeight: "100px"} , l:{}}} , //"https://wwc.alicdn.com/avatar/getAvatar.do?width=100&height=100&type=sns"
+																															yy: {pn:   "200px" , html: htm.tl + " ,欢迎你" , attr:{color: "green"} ,  marginLeft: 10 } ,
+																															aal: {pn:   3 , 
+																																				color: htm.color.money ,
+																																	 ty:"|",
+																																	 l:  60 ,
+																																	 all:[
+																																				{
+																																				 tag: p.map.tl = htm("<pl>").corner() ,
+																																				 background: "rgb(30, 191, 122)" ,
+																																				 ty:"|",
+																																				 all:[
+																																							 { } ,
+																																							 {
+																																								 pn: 6 ,
+																																								  all:[
+																																												{pn: "31px",  html: "今日效果" , lineHeight: "30px" } ,
+																																												{pn: "2px" , html:"<hr>" } ,
+																																												{
+																																												 pn: "60px" ,
+																																												 lineHeight: "60px" ,
+																																												 ty:"|" , 
+																																												 all:[ {pn: 2 ,attr:{htm:"text"} , zoom: 2 } ,   {html: "￥" } , {pn:3 , attr: {a:  ""} , text: "100" ,  zoom: 2  , textAlign: "left"  , color: htm.color.lefton} ]
+																																											  } ,
+																																												{pn: "2px" , html:"<hr>" } ,
+																																												{pn: "22px" , attr: {aa:  ""} ,  html: "共1笔" , lineHeight: "22px" } ,
+																																												{ }  ,
+																																											 ]
+																																								} ,
+																																							 { } 
+																																							]
+																																					}   ,
+																																				 {
+																																				  tag: p.map.l = htm("<pl>").corner() ,
+																																				 
+																																				 
+																																				  background: "rgb(222, 151, 151)" ,
+																																					ty:"|",
+																																					all:[
+																																							 { } ,
+																																							 {
+																																								 pn: 6 ,
+																																								 all:[
+																																											{pn: "31px",  html: "30日效果" , lineHeight: "30px" } ,
+																																											{pn: "2px" , html:"<hr>" } ,
+																																											{
+																																											 pn: "60px" ,
+																																											 lineHeight: "60px" ,
+																																											 ty:"|" , 
+																																											 all:[ {pn: 2 ,attr:{htm:"text"} , zoom: 2 } ,   {html: "￥" } , {pn:3 ,  attr: {a:  ""} , text: "100" ,  zoom: 2  , textAlign: "left"  , color: htm.color.lefton} ]
+																																											} ,
+																																											 {pn: "2px" , html:"<hr>" } ,
+																																											{pn: "22px" , attr: {aa:  ""} ,  html: "共1笔" , lineHeight: "22px" } ,
+																																											{ }  ,
+																																										 ]
+																																								} ,
+																																							 { } 
+																																						 ]
+																																					} ,
+																																				 
+																																				{
+																																				 tag: p.map.lt = htm("<pl>").corner() ,
+																																				 background: "rgb(222, 131, 19)" ,
+																																				 ty:"|",
+																																				 all:[
+																																							 { } ,
+																																							 {
+																																								 pn: 6 ,
+																																								 all:[
+																																											{pn: "31px",  html: "30日收入" , lineHeight: "30px" } ,
+																																											{pn: "2px" , html:"<hr>" } ,
+																																											{} ,
+																																											{
+																																											 pn: "60px" ,
+																																											 lineHeight: "60px" ,
+																																											 ty:"|" , 
+																																											 all:[ {pn: 2 ,attr:{htm:"text"} , zoom: 2 } , {html: "￥"} , {pn:3 , attr: {a:  ""} , text: "100" ,  zoom: 2  , textAlign: "left"  , color: htm.color.lefton} ]
+																																											} ,
+																																											 {pn: 2  }
+																																										 ]
+																																								} ,
+																																							 { } 
+																																						]
+																																				 }
+																																			] ,
+																																	  textAlign: "center"
+																																	} ,
+																															pay: {
+																																		html:htm("<button>淘宝联盟提现</button>").click(()=> open('https://media.alimama.com/account/account.htm')) , 
+																																	 textAlign: "center" , 
+																																	 lineHeight:  "122px"
+																																	} ,
+																																ll: {pn: "30px"}
+																														}
+																											}     ,
+																											{pn: "16px" }
+																									 ] ,
+																								 background:   htm.co.lt 
+																						 } ,
+																						 {pn: "2px" , html:"<hr/>"}
+																						]
                                        } ,
                                      pl:{
-                                         contain:{all:[ 
-                                                        "16px" ,
-                                                        {
-                                                         tag: p.rpy = htm.panhtm.createElement("pl") ,
-                                                       contain: {ty:"|", all:[
-                                                                              "16px",
-                                                                              {
-                                                                                background:   htm.co.containtl   ,
-                                                                                tag:htm("<pl>").corner() ,
-                                                                                  contain:{
-                                                                                           all:[
-                                                                                                { 
-                                                                                                 pn:"60px", 
-                                                                                                 tag:p.yp = htm.panhtm.createElement("pla") ,  
-                                                                                                 lineHeight:"60px" ,
-                                                                                                 contain:{
-                                                                                                          ty: "|" ,
-                                                                                                          all:{
-                                                                                                                tl:{pn:"100px"} , 
-                                                                                                                tt: { } ,
-                                                                                                                rt:{pn:"100px" , textAlign:"right"}
-                                                                                                              } , 
-                                                                                                         }
-                                                                                               } ,
-                                                                                                {pn: "2px" , html:"<hr/>"} ,
-                                                                                                {
-                                                                                                   background:   htm.co.contain   ,
-                                                                                                   tag: p.yp.a = htm.panhtm.createElement("pl") ,
-                                                                                                 contain:{
-                                                                                                          ty: "|" ,
-                                                                                                          all:{
-                                                                                                                rt:{
-                                                                                                                    pn:"1px" ,
-                                                                                                                    
-                                                                                                                    //background: "#aa6af6"
-                                                                                                                  },
-                                                                                                                tl:{
-                                                                                                                    //html: htm("<pl>") ,  
-                                                                                                                  }  
-                                                                                                                
-                                                                                                              } , 
-                                                                                                         }
-                                                                                               }
-                                                                                              ]
-                                                                                            }
-                                                                                } , 
-                                                                               "26px",
-                                                                               {
-                                                                                background:   htm.co.containtl   ,
-                                                                                tag:htm("<pl>").corner() ,
-                                                                                   contain:{
-                                                                                           all:[
-                                                                                                { 
-                                                                                                 pn:"60px", tag:p.ypr = htm.panhtm.createElement("pla") ,  
-                                                                                                 lineHeight:"60px" ,
-                                                                                                 contain:{
-                                                                                                          ty: "|" ,
-                                                                                                          all:{
-                                                                                                                tl:{} ,
-                                                                                                                rt:{textAlign:"right"} 
-                                                                                                              } , 
-                                                                                                         }
-                                                                                                } ,
-                                                                                                 {pn: "2px" , html:"<hr/>"} ,
-                                                                                                 {
-                                                                                                  background:      htm.co.contain ,
-                                                                                                  tag:p.ypr.a = htm.panhtm.createElement("pl"),  contain:{ty: "|" ,all:{
-                                                                                                                                                     tl:{pn: "1px"} ,
-                                                                                                                                                     rt:{}  
-                                                                                                                                                    }
-                                                                                                                                     }
-                                                                                                  }
-                                                                                                ]
-                                                                                            }
-                                                                                } , 
-                                                                                "16px" ]}
-                                                        } , 
-                                                        "16px"
-                                                      ]}
+                                         all:[ 
+																							"16px" ,
+																							{
+																							 tag: p.rpy = htm.panhtm.createElement("pl") ,
+																						   ty:"|", 
+																						   all:[
+																										{
+																											background:   htm.co.lttl   ,
+																											tag:htm("<pl>").corner() ,
+																											all:[
+																														{ 
+																														 pn:"60px", 
+																														 tag:p.yp = htm.panhtm.createElement("pla") ,  
+																														 ty: "|" ,
+																														 lineHeight:"60px" ,
+																														 all:{
+																																	tl:{pn:"100px"} , 
+																																	tt: { }
+																																}
+																													 }  ,
+																														{
+																															 background:   htm.co.lt   ,
+																															 tag: p.yp.a = htm.panhtm.createElement("pl") ,
+																														   ty: "|" ,
+																															 all:{
+																																		rt:{
+																																				pn:"1px" ,
+																																				
+																																				//background: "#aa6af6"
+																																			},
+																																		tl:{
+																																				//html: htm("<pl>") ,  
+																																			}  
+																																		
+																																	}
+																													 } ,
+																													 {pn: "2px" , html:"<hr/>"}
+																													]
+																											} , 
+																										 "22px",
+																										 {
+																											background:   htm.co.lttl   ,
+																											tag:htm("<pl>").corner() ,
+																											all:[
+																														{ 
+																														 pn:"60px", tag:p.ypr = htm.panhtm.createElement("pla") ,  
+																														 lineHeight:"60px" ,
+																														 ty: "|" ,
+																														 all:{
+																																	tl:{} ,
+																																	rt:{textAlign:"right"} 
+																																}
+																														} ,
+																														 {
+																															background:      htm.co.lt ,
+																															tag:p.ypr.a = htm.panhtm.createElement("pl"),
+																															ty: "|" ,
+																															all:{
+																																	 tl:{pn: "1px"} ,
+																																	 rt:{}  
+																																	}
+																															} ,
+																														 {pn: "2px" , html:"<hr/>"}
+																													 ]
+																											}  ]
+																							} , 
+																							"16px"
+																						]
                                        }
                                    }
           })
@@ -778,84 +967,52 @@ function ap(p , l){
           htm(p.ypr.a.tl).html(htm(p.ypr.aa= htm.panhtm.createElement("pl")).width(htm(p.ypr.a.rt).width()))
           
           //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-          //p.hh.ll=pl.aa.get("http://pub.alimama.com/common/adzone/adzoneManage.json?tab=3&toPage=1&perPageSize=40&gcid=8&t=" + ((p.hh.ll=htm.now()) + 100) + "&" + "pvid=" + htm.p.pn+ p.hh.ll + "&_input_charset=utf-8" + "&" + htm.p.token)
-				  /*p.hh.ll.then(function (a){
-				                           if(lt=p.hh.ll.responseText){
-				                            
-																		return htm("<pl>").height(3).animate({height: 100} , 100000 , pl.lr)
-																		}
-																		//htm("<pl>").height(3).animate({height: 100} , 10000 , pl.lr)
-				  })) //, htm("<pl>").height(3).animate({height: 100} , 10000 , pl.lr))*/
-				  htm("label",p.map.rp.pf.aal).css("zoom" , 2)
-				  htm("a",p.map.rp.pf.aal).css( "color" , htm.color.label) 
-				  //p.hh.ll ? "" : pl.lr()
+          p.hh  = htm("<pl>").width(300)
 				  p.hh.ll=pl.aa.get("http://pub.alimama.com/common/adzone/adzoneManage.json?tab=3&toPage=1&perPageSize=40&gcid=8&t=" + ((p.hh.ll=htm.now()) + 100) + "&" + "pvid=" + htm.p.pn+ p.hh.ll + "&_input_charset=utf-8" + "&" + htm.p.token)
-				  p.hh.ll.then(function(l , a , lt){
-															   lt=p.hh.ll.responseText
-															   if(lt){ 
+				  p.hh.ll.then(function(l , a , ttl){
+															   ttl=p.hh.ll.responseText
+															   if(ttl){ 
 																				a=~~""
-																		    lt.replace(/"mixAlipayNum30day"\:(.*?),/g , (l,aa)=> a = a + (aa * 1 ? aa * 1 : ~~aa))
-																		    //htm("label" , p.map.rp.pf.aal.l).text(a | 0)
+																		    ttl.replace(/"mixAlipayNum30day"\:(.*?),/g , (l,aa)=> a = a + (aa * 1 ? aa * 1 : ~~aa))
+																		    //htm("label" , p.map.tl.aal.l).text(a | 0)
                                         htm.p.AlipayN = a | 0
 																		    a=~~""
-																		    lt.replace(/"mixAlipayRec30day"\:(.*?),/g , (l,aa)=> a = a + (aa * 1 ? aa * 1 : ~~aa))
-																		    //htm("label" , p.map.rp.pf.aal.p).text(("" + (a * 100 | 0)).replace(/(.*)(..)/, (t,tl,l)=>(tl? tl: ~~tl) + "." + l))
+																		    ttl.replace(/"mixAlipayRec30day"\:(.*?),/g , (l,aa)=> a = a + (aa * 1 ? aa * 1 : ~~aa))
+																		    //htm("label" , p.map.tl.aal.p).text(("" + (a * 100 | 0)).replace(/(.*)(..)/, (t,tl,l)=>(tl? tl: ~~tl) + "." + l))
 																		    htm.p.AlipayR = a
 																		    a=~~""
-																		    lt.replace(/"rec30day"\:(.*?),/g , (l,aa)=> a = a + (aa* 1 ? aa * 1 : ~~aa))
-																	      htm("label" , p.map.rp.pf.aal.lp).text("￥" + ("" + (a * 100 | 0)).replace(/(.*)(..)/, (t,tl,l)=>(tl? tl: ~~tl) + "." + l))
+																		    ttl.replace(/"rec30day"\:(.*?),/g , (l,aa)=> a = a + (aa* 1 ? aa * 1 : ~~aa))
+																	      htm("[a]" , p.map.lt).text(("" + (a * 100 | 0)).replace(/(.*)(..)/, (t,tl,l)=>(tl? tl: ~~tl) + "." + l))
 																	      //htm.p.Alipay = a
  																				
 																				l=[]
-																				lt.replace(/adzonePid\"\:\"(mm(?:\_[0-9]*)*?)\"/g, (aa,a)=>l=l.concat(a))
-																				htm.contain(p.hh, {ty:"|" , all:[
-																																							 { 
-																																								pn: "1px" ,
-																																								contain:{
-																																												 all:[
-																																															{html: p.hh.ll = htm("<input jpg tt>").width(300).val(l[1])} ,
-																																															{pn: "1px" , html:  p.hh.arp= htm("<pl>").css( {opacity:0.9 , marginLeft: - 6000 , width: 300 , background: htm.co.money , height : 163 }).corner().html(htm("<alt>").html("<li><label>" + l.join("</label></li><li><label>") + "</label></li>"))}
-																																														]
-																																													}
-																																								 } ,
-																																								{html:htm("<a><t htm=pla></a>").css( {lineHeight: "30px" , "marginLeft" :  "282px"}) ,
-																																									 on: {click :function(a){
-																																																					p.hh.arp.css( {marginLeft: 6})
-																																																						p.hh.arp.click(function(a , aa){
-																																																																	 a=a.originalEvent.srcElement
-																																																																	 p.hh.ll.val(a.textContent)
-                                                                                                                                   htm.p.ll= eval(p.hh.ll.val().replace("mm_","[").replace(/\_/g , ",") + "]")
-                                                                                                                                   p.hh.arp.css( {marginLeft: - px})
-																																																					 })
-																																																					return !" "
-																																								 }}}// ,textAlign: "right"
-																												]})
-                                      htm.p.ll= eval(p.hh.ll.val().replace("mm_","[").replace(/\_/g , ",") + "]")
+																				ttl.replace(/adzonePid\"\:\"(mm(?:\_[0-9]*)*?)\"/g, (aa,a)=>l=l.concat(a))
+																				p.hh.html( htm("<alt text>").html("<li><label>" + l.join("</label></li><li><label>") + "</label></li>"))
+                                      htm.ll=htm.ll? htm.ll : eval(htm("li" , p.hh)[0].textContent.replace("mm_","[").replace(/\_/g , ",") + "]")
                                       pl.lr = (t , tt)=>( 
                                        t= new Date() , 
 																			 t=t.getFullYear() + "-" + ((tt=t.getMonth() + 1) > 9 ? tt : "0" + tt) + "-" + t.getDate() ,
 																			 p.hh.ll=pl.aa.get("http://pub.alimama.com/report/getTbkPaymentDetails.json?&payStatus=12&queryType=1&toPage=1&perPageSize=20&total=&t=" + ((p.hh.ll=htm.now()) + 100) + "&" + "pvid=" + htm.p.pn+ p.hh.ll + "&_input_charset=utf-8" + "&" + htm.p.token) ,
 																			 p.hh.ll.then(function (al , l ,tl){
 																			                         p.hh.lr="aaa"
-																															 if(lt=p.hh.ll.responseText){
-																																 tl=lt.replace(/^.*(?=\[\{)|\}\].*/g , "") + "\}\]"  
-																																 console.log(lt)
-																																 if(tl==lt + "\}\]"){
-																																                     htm("a" , p.map.rp.pf.aal.l).html("共0笔")
-																																                     htm("label" , p.map.rp.pf.aal.l).html("￥0")
-                                                                                     htm("a" , p.map.rp.pf.aal.p).html("共" + htm.p.AlipayN + "笔")
-                                                                                     htm("label" , p.map.rp.pf.aal.p).html("￥" + htm.p.AlipayR)
+																															 if(ttl=p.hh.ll.responseText){
+																																 tl=ttl.replace(/^.*(?=\[\{)|\}\].*/g , "") + "\}\]" 
+																																   if(tl==ttl + "\}\]"){
+																																                     htm("[aa]" , p.map.tl).html("共0笔")
+																																                     htm("[a]" , p.map.tl).html("0")
+                                                                                     htm("[aa]" , p.map.l).html("共" + htm.p.AlipayN + "笔")
+                                                                                     htm("[a]" , p.map.l).html(htm.p.AlipayR)
                                                                                      return htm("<pl>").height(3).animate({height: 100} , 100000 , pl.lr)
 																																   }
 																																 l=eval(tl)
 																																 
 																																 tl=al=~~""
-                                                                 l.map(lt=> t==lt.createTime.replace(/ .*/ , "") ? (al=al+1 , tl=tl + ~~lt.feeString) : "")
-                                                                 htm("a" , p.map.rp.pf.aal.l).html("共" + al + "笔")
-                                                                 htm("label" , p.map.rp.pf.aal.l).html("￥" + (tl * 100 | 0) / 100)
-                                                                 htm("a" , p.map.rp.pf.aal.p).html("共"+(al +htm.p.AlipayN) + "笔")
-                                                                 htm("label" , p.map.rp.pf.aal.p).html("￥" + ((tl + htm.p.AlipayR) * 100 | 0) / 100)
-                                                                 //htm("label" , p.map.rp.pf.aal.lp).html(("共" + (htm.p.Alipay * 100 | 0)).replace(/(.*)(..)/, (t,tl,l)=>(tl? tl: ~~tl) + "." + l))
+                                                                 l.map(ttl=> t==ttl.createTime.replace(/ .*/ , "") ? (al=al+1 , tl=tl + ~~ttl.feeString) : "")
+                                                                 htm("[aa]" , p.map.tl).html("共" + al + "笔")
+                                                                 htm("[a]" , p.map.tl).html((tl * 100 | 0) / 100)
+                                                                 htm("[aa]" , p.map.l).html("共"+(al +htm.p.AlipayN) + "笔")
+                                                                 htm("[a]" , p.map.l).html(((tl + htm.p.AlipayR) * 100 | 0) / 100)
+                                                                 //htm("label" , p.map.tl.aal.lp).html(("共" + (htm.p.Alipay * 100 | 0)).replace(/(.*)(..)/, (t,tl,l)=>(tl? tl: ~~tl) + "." + l))
 																																return htm("<pl>").height(3).animate({height: 100} , 100000 , pl.lr)
 																																}
 																																//htm("<pl>").height(3).animate({height: 100} , 10000 , pl.lr)
@@ -865,83 +1022,90 @@ function ap(p , l){
                                     }
 					})
           
-          htm.contain(p.yp.a.tl ,{
+          
+          
+          
+          
+          
+          htm.lt(p.yp.a.tl ,{
                                   all:[
-                                       {
-                                        pn:"30px" ,
+                                       {background: htm.co.th ,
+                                        font: "700 15px htm" ,
+                                        pn: "31px" ,
                                          tag:p.ar= htm("<pl>") ,
-                                       contain :{ty: "|" ,
-                                                 all:[
-                                                     {html:"<label><input type=checkbox shopTag=yxjh>计划</label>"} ,
-                                                     {html:"<label><input type=checkbox t='dpyhq=1' shopTag=dpyhq>优惠券</label>"} ,
-                                                     {pn:  1.6,
-                                                        tag:"<label></label>" ,
-                                                      contain: {ty:"|" , all:[
-                                                                              {  pn:"36px" , text:"店铺:"} ,
-                                                                              { 
-                                                                                pn: "1px" ,
-                                                                                contain:{
-                                                                                         all:[
-                                                                                              {
-                                                                                               html: p.ll = htm("<input t value=所有 tt=t>").width(116).on({
-                                                                                                     input: function(){p.ll.val("所有")} ,      
-                                                                                                          click:function(){
-                                                                                                                          p.arp.css( {marginLeft: 6})
-                                                                                                                          p.arp.click(function(a , aa){
-                                                                                                                                                   a=a.originalEvent.srcElement
-                                                                                                                                                   p.ll.val(a.textContent)
-                                                                                                                                                   p.ll.attr("t" , (aa=htm(a).attr("t")) ? aa : "")
-                                                                                                                                                   p.ll.attr("shopTag" , (aa=htm(a).attr("shopTag")) ? aa : "")
-                                                                                                                                                   htm("title").animate({height: "+1000"} , 100 , function(){htm(window).click()})
-                                                                                                                          })
-                                                                                                                          return !" "
-                                                                                                          }
-                                                                                                }) 
-                                                                                               } ,
-                                                                                              {pn: "1px" , html:  p.arp= htm("<pl>").css( {opacity:0.9 , marginLeft: - 900 , width: 116 , background: htm.co.pl , height : 161 }).corner().html(htm("<alt>").html("<li></li><li>所有</li><li>天猫</li><li>淘宝</li><li t='b2c=1' shopTag=b2c>旗舰店</li><li t='jpmj=1' shopTag=jpmj>金牌</li>"))}
-                                                                                            ]
-                                                                                         }
-                                                                               } ,
-                                                                              {html:htm("<a><t htm=pla></a>").css( {"marginLeft" :  "100px" })}// ,textAlign: "right"
-                                                                            ]}
-                                                      } ,
-                                                     
-                                                     {pn:2 ,html:htm("<label>").html(["月销量>",htm('<input type=number min=1 t=startBiz30day>'),"笔"])} ,
-                                                     
-                                                     {pn:2, html:htm("<label>").html([ "比率>", htm("<input type=number        min=0.1 t=startTkRate>") , "%" ])} ,
-                                                      {html: htm("<button blue>确 定</button>")  .css( {margin:"2%" , zoom: 0.6}).click(function(a){p.lpl.trigger("click")})} ,
-                                                     {pn:"1px" , html:p.ar.h=htm("<pl ar>").text('以下每条商品右侧有个"打勾",宣传需勾上，不宣传不用勾')}//.css( {opacity: 0.9 , marginLeft: "" ,   background: htm.co.contain })                                                                                                
-                                                    ]
-                                                   }
+                                        lineHeight:    "31px" ,
+                                        ty: "|" ,
+                                        all:[
+																							 {pn: 2  } ,
+																							 {html:"<label><input type=checkbox shopTag=yxjh>计划</label>"} ,
+																							 {html:"<label><input type=checkbox t='dpyhq=1' shopTag=dpyhq>优惠券</label>"} ,
+																							 {pn: 2, 
+																								  tag:"<label></label>" ,
+																								  ty:"|" , 
+																								  all:[
+																												{  pn:"33px" , text:"店铺:"} ,
+																												{ 
+																													pn: "1px" ,
+																													all:[
+																																	{
+																																	 html: p.ll = htm("<input t value=所有 tt=t>").width(100).on({
+																																				 input: function(){p.ll.val("所有")} ,      
+																																							click:function(){
+																																															p.arp.css( {marginLeft: 6})
+																																															p.arp.click(function(a , aa){
+																																																											 a=a.originalEvent.srcElement
+																																																											 p.ll.val(a.textContent)
+																																																											 p.ll.attr("t" , (aa=htm(a).attr("t")) ? aa : "")
+																																																											 p.ll.attr("shopTag" , (aa=htm(a).attr("shopTag")) ? aa : "")
+																																																											 htm("title").animate({height: "+1000"} , 100 , function(){htm(window).click()})
+																																															})
+																																															return !" "
+																																							}
+																																		}) 
+																																	 } ,
+																																	{pn: "1px" , html:  p.arp= htm("<pl>").css( {opacity:0.9 , marginLeft: - 9000 , width: 100 , background: htm.co.text , height : 161 , color:  htm.color.text }).corner().html(htm("<alt text>").html("<li></li><li>所有</li><li>天猫</li><li>淘宝</li><li t='b2c=1' shopTag=b2c>旗舰店</li><li t='jpmj=1' shopTag=jpmj>金牌</li>"))}
+																																]
+																												 } ,
+																												{color:  htm.color.text , html:htm("<a><t htm=pla></a>").css( {"marginLeft" :  "90px" })}// ,textAlign: "right"
+																											]
+																								} ,
+																							 {pn: 2, html:htm("<label>").html(["月销量>",htm('<input type=number min=1 t=startBiz30day>'),"笔"])} ,
+																							 
+																							 {pn: 2, html:htm("<label>").html([ "比率>", htm("<input type=number        min=0.1 t=startTkRate>") , "%" ])} ,
+																								//{html: htm("<button>确 定</button>")  .css( {margin:"2%" , zoom: 0.6}).click(function(a){p.lpl.trigger("click")})} ,
+																							 { } ,
+																							 {pn:"1px" , html:p.ar.h=htm("<pl ar>").text('以下每条商品右侧有个"打勾",宣传需勾上，不宣传不用勾')}//.css( {opacity: 0.9 , marginLeft: "" ,   background: htm.co.lt })                                                                                                
+																					]
                                         } ,
+                                       {pn: "1px" , background: htm.co.thall } ,
                                        {
-                                        pn:"30px" ,
+                                        pn:"29px" ,
                                          tag:p.th= htm.panhtm.createElement("pal") ,
                                          background: htm.co.thall ,
                                           textAlign: "center" ,
-                                          lineHeight: "33px" ,
+                                          font: "15px htm" ,
                                        color:  htm.color.thall ,
-                                        zoom:       0.9 ,
-                                       contain :{ty: "|" ,
-                                                 all:[
-                                                      {pn:  6 , html: htm("<a>商品(<t>点触右则<t>深色</t>标题可排序)<ht htm=right></a>") } ,
-                                                      {html: "<a htm a=3>价格(￥)<htm></a>"} ,
-                                                      {html: "<a>佣金(￥)</a>"} ,
-                                                      {pn: 1.1 , html: "<a a=1>最强比率(%)<htm></a>"} ,
-                                                      {html: "<a a=5>月推广<htm></a>"} ,
-                                                      {html: "<a a=7>月派佣(￥)<htm></a>"} ,
-                                                      {html: "<a>优惠券(￥)</a>"} ,
-                                                      {pn:"16px"}
-                                                     ] ,
-                                                   O: 1
-                                                 }   ,
+                                          lineHeight:     "29px" ,
+                                          ty: "|" , 
+                                          l:3 ,
+																					all:[
+																								{pn:  6 , html: htm("<a>商品(<t>点触右则<t>深色</t>标题可排序)<ht htm=right></a>") } ,
+																								{html: "<a htm a=3>价格(￥)<htm></a>"} ,
+																								{html: "<a>佣金(￥)</a>"} ,
+																								{pn: 1.1 , html: "<a a=1>最强比率(%)<htm></a>"} ,
+																								{html: "<a a=5>月推广<htm></a>"} ,
+																								{html: "<a a=7>月派佣(￥)<htm></a>"} ,
+																								{html: "<a>优惠券(￥)</a>"} ,
+																								{pn:"16px" , html:"<a>"}
+																							] ,
+                                                   //O: 1   ,
                                             on:{click: function(a,aa,aaa){
                                                                   a=htm(a.originalEvent.srcElement) 
                                                                    if(p.yp.tl.textContent==" 商 品 " | p.yp.tl.textContent==" 鹊 桥 "){
                                                                            aa=htm("htm" , a)
                                                                            aaa= +(a.attr("a"))
                                                                            a= (a.text()=="价格(￥)" ? aa.attr("htm")=="ll" : "") ? (++aaa , "htm") : "ll"  
-                                                                           p.th.contain.map(function(a,a){
+                                                                           p.th.lt.map(function(a,a){
                                                                                   htm("htm" , a).attr("htm" , "")
                                                                            })
                                                                            if(aaa){ 
@@ -968,18 +1132,21 @@ function ap(p , l){
                target: ()=>  pl.ll
              })
           
-          window.onclick = function(l){
-           if(p.arp) p.arp.css("marginLeft") =="6px" ?       p.arp.css( {marginLeft: - 900 }) : ""
-           if((l=p.hh) ? (l=l.arp) : "" ) l.css("marginLeft") =="6px"?l.css( {marginLeft: - 6000 }) : "" }
+          window.onclick = ()=> ((p.arp.css("marginLeft") =="6px" ?       p.arp.css( {marginLeft: - 9000 }) : "") , htm("alt[text]" , pl.pla.contents()).html(""))
            pl.pla.prop("contentWindow").onclick    = ()=>   htm(window).click()
-           htm([ window , pl.pla.prop("contentWindow") ] ).keyup (l => 
-                          (l.originalEvent.srcElement.tagName == "INPUT" | l.originalEvent.srcElement.tagName == "TEXTAREA") ? (l.originalEvent.srcElement == p.a[0] & l.originalEvent.code =="Enter") ? tap() : "l" : "l")
+           htm([ window, ...htm("iframe").map((l,t)=>t.contentWindow)  ] ).keyup (l => 
+                          (l.originalEvent.srcElement.tagName == "INPUT" | l.originalEvent.srcElement.tagName == "TEXTAREA") ? (l.originalEvent.srcElement == p.a[0] & l.originalEvent.code =="Enter") ? tap() : "l" : location.href=location.href + "#")
           
           pl.pla.load( function(a , t ){
                                  a = pl.pla.attr("src")
                                  if(a=="a.htm"){
                                    pl.pla.p = htm("alt" , htm(pl.pla.contents().prop("activeElement")).css("margin",1/1000))
-                                  if(pl.pla.p.length){ 
+                                   if(aaa=="aaa"){
+                                        htm("a",p.map.lf).css( "color" , "")
+                                        htm("a" , htm("pl",p.map.lf)[3]).css( "color" , htm.color.lefton)
+                                        htm("pl",p.map.lf)[3].tap(htm("pl"   ,p.map.lf)[3].textContent)
+                                     }
+                                   if(pl.pla.p.length){ 
                                     htm("style" , pl.pla.contents()).html(htm("style" , pl.pla.contents()).html().replace(/htm\.(co(?:lor)?)\.(鹊|定|[a-z]*)/g , (aa,l,a)=>htm[l][a]))
                                     a=localStorage.getItem("l")
                                    if(a) eval("a=" + a)
@@ -1035,7 +1202,7 @@ function ap(p , l){
                                         
                                      l = a.originalEvent.srcElement
                                               
-                                     if (htm(p.ypr.tl).text()==" 设 置 ") return 
+                                     if (htm(p.ypr.tl).text()=="宣传图文设置") return 
                                      
                                      
                                      
@@ -1050,7 +1217,7 @@ function ap(p , l){
                                                           p.ypr.a.rt.pl.html("<p>" + htm("pl" ,  l)[0].textContent + "</p><p>抢购价:￥" +htm("pl",l)[1].textContent + "</p>")
                                                           p.ypr.a.rt.hl  = l
                                                           htm("li" , pl.pla.p).css( {"float" : "left" , background: "" } )
-                                                          htm("li:even" , pl.pla.p).css( {"float" : "left" , background: htm.co.lieven } )
+                                                          htm("li:even" , pl.pla.p).css( {"float" : "left" , background: htm.co.li } )
                                                           htm(l).css( {"float" : "left" , background: htm.co.hoverli } )
                                                           
                                                           
@@ -1081,8 +1248,7 @@ function ap(p , l){
           
           
                               
-         pl.al= function(lp, lt , l){
-                              //lp=htm(p.ypr.a.rt.hl).clone()
+         pl.al= function(lp, ttl , l){
                               lp=[].map.apply(htm(p.ypr.a.rt.hl).contents() , [(l,ll)=> (ll==6) ? "" : htm(l).text()])
                                lp.l= p.ypr.a.rt.hl.r
                                lp[2] = p.ypr.a.rt.hl.r[2]  //htm(lp.contents()[2]).html(("<t>" + p.ypr.a.rt.hl.r[2] + "</t>").replace("鹊</t>" , "</t><tl><tll>鹊</tll></tl>") //htm(l.contents()[6]).html()
@@ -1090,8 +1256,7 @@ function ap(p , l){
                               if(l ? "a" :  l===""){ 
                                       p.ra.html(htm("<pl>").html(["转 链 ing " , htm("<htm htm=hn animate >") ]))
                                       l=p.ypr.a.rt.hl
-                                      
-                                      pl.then=pl.aa.get("http://pub.alimama.com/common/code/getAuctionCode.json?auctionid=" + l.r[0] + "&adzoneid=" + htm.p.ll[2] +  "&siteid="   + htm.p.ll[1] +  "&scenes=1&t=" + ((lt=htm.now()) + 100) + "&"+    htm.p.token + "&" + "pvid=" + htm.p.pn + lt , 
+                                      pl.then=pl.aa.get("http://pub.alimama.com/common/code/getAuctionCode.json?auctionid=" + l.r[0] + "&adzoneid=" + htm.ll[2] +  "&siteid="   + htm.ll[1] +  "&scenes=1&t=" + ((ttl=htm.now()) + 100) + "&"+    htm.p.token + "&" + "pvid=" + htm.p.pn + ttl , 
 																					      function(a , alt , tll){
 																														 if(a=a.data){                 
 																														     lp.ll= l.ll = {
@@ -1152,14 +1317,13 @@ function ap(p , l){
                                                                     })
 																											       }
 																											       console.log("l")
-																											       tll= ltt=> ltt= (htm.now()) > lt + 5000 ? p.ra.html("加入到推广栏") : htm("<pl>").height(3).animate({height: 100} , 100 , tll)
+																											       tll= ltt=> ltt= (htm.now()) > ttl + 5000 ? p.ra.html("加入到推广栏") : htm("<pl>").height(3).animate({height: 100} , 100 , tll)
 																											       tll()
 																											       console.log("tt")
 																											       return   
 																											    }
 																													
 																		                   })}
-																		                   console.log("aaa")
 																		                   {(function lp(a){
 																		                                    a= pl.then.responseText
 																		                                    if(p.ra.text()=="加入到推广栏") return
@@ -1202,7 +1366,6 @@ function ap(p , l){
           }
           
           
-          htm("a" , p.map.lf).css("lineHeight" , htm(p).height() /11 * 10 / 6 + "px")
           htm(p.map.lf).click(function(a){
                 a= htm.panhtm.elementFromPoint(2,a.pageY)
                 //a=a.originalEvent.srcElement
@@ -1222,7 +1385,7 @@ function ap(p , l){
           htm.pal.show(true)
           //pl.h => 
   
-  pl.qq = function(lt , l){
+  pl.qq = function(ttl , l){
       l={}
       l.pla = htm("li" , pl.pl.pl)
       htm(pl.a).html("")
@@ -1237,22 +1400,22 @@ function ap(p , l){
       htm.pal.y = 3
       htm.pal.setAlwaysOnTop(true)
       
-      htm.contain(pl.a , {ty:"|" ,all:[
+      htm.lt(pl.a , {ty:"|" ,all:[
                                                             {pn:   "100px" , html: l.jpg = htm("<img>").width("100%").height("100%").attr("src" , "tdh.ico")} ,
                                                             
                                                             {
-                                                             contain:{all:[
-                                                                               {html: "<p>淘多惠广播机</p>", lineHeight: "30px" , textAlign: "center" } ,
-                                                                               {pn: "16px" , background: "#31aafa" ,  html : l.mt = htm("<meter value=100 float=left>").width(1).height("100%")} ,
-                                                                               {tag: l.t=htm("<pl>") ,lineHeight: "31px" ,textAlign: "center" }
-                                                                              ]}
+                                                             all:[
+																																	 {html: "<p>淘多惠广播机</p>", lineHeight: "30px" , textAlign: "center" } ,
+																																	 {pn: "16px" , background: "#31aafa" ,  html : l.mt = htm("<meter value=100 float=left>").width(1).height("100%")} ,
+																																	 {tag: l.t=htm("<pl>") ,lineHeight: "31px" ,textAlign: "center" }
+																																	]
                                                              }     ,
                                                            {
                                                             pn: "100px" ,
-                                                               contain:{all:[
-                                                                             {html:htm("<button blue>").text("返回").click(h=> pl.pn("aaa")) , lineHeight: "90px" , textAlign: "center" } ,
-                                                                             //{html:l.l=htm("<button blue>").width(60).text(">>").click(h=>l.l.text()=="广播" ? (l.l.tap ? l.l.tap() : "") :  l.height>100 ? (l.h.height(90), l.height= 100  , l.l.text(">>")) : (l.height= 633 , l.h.height(600) ,  l.l.text("<<")))}  
-                                                                           ]} 
+                                                            all:[
+																																 {html:htm("<button>").text("返回").click(h=> pl.pn("aaa")) , lineHeight: "90px" , textAlign: "center" } ,
+																																 //{html:l.l=htm("<button>").width(60).text(">>").click(h=>l.l.text()=="广播" ? (l.l.tap ? l.l.tap() : "") :  l.height>100 ? (l.h.height(90), l.height= 100  , l.l.text(">>")) : (l.height= 633 , l.h.height(600) ,  l.l.text("<<")))}  
+																															 ]
                                                                                //,lineHeight: "36px" 
                                                           }
                                       ]})
@@ -1276,7 +1439,7 @@ function ap(p , l){
                       }
               l.mt.width(1)
               
-              animate=()=> (console.log("a") , l.mt.animate({width: "100%"} , lt , a=> q(lp , ll)))
+              animate=()=> (console.log("a") , l.mt.animate({width: "100%"} , ttl , a=> q(lp , ll)))
              
             if(lp  >= r.length) {
                  ll+=1
@@ -1310,8 +1473,7 @@ function ap(p , l){
       
  }
  
-        
-    pl.qql = function(lt , l){
+   pl.qql = function(ttl , l){
       l={}
       l.pla = htm("li" , pl.pl.pl)
       htm(pl.a).html("")
@@ -1321,31 +1483,31 @@ function ap(p , l){
       htm("svg , foreignObject").width(600)
       htm.pal.x = ~~((screen.availWidth - 600) / 2)
       htm.pal.setAlwaysOnTop(true)
-      htm.contain(pl.a ,       {all:[
+      htm.lt(pl.a ,       {all:[
                                    {
                                     pn: "1px" ,
                                     html:l.tt=htm("<pl>").css( {height:90, background: htm.co.htm  , textAlign: "center" })
                                     } ,
                                    {
                                     pn:    "90px" ,
-                                    contain:  {ty:"|" ,all:[
-                                                            {pn:   "100px" , html: l.jpg = htm("<img>").width("100%").height("100%").attr("src" , "lg.gif")} ,
-                                                            
-                                                            {
-                                                             contain:{all:[
-                                                                               {html: "<h6>淘多惠广播机</h6>", lineHeight: "36px" , textAlign: "center" } ,
-                                                                               {pn: "16px" , background: "#31aafa" ,  html : l.mt = htm("<meter value=100 float=left>").width(1).height("100%")} ,
-                                                                               {tag: l.t=htm("<pl>") ,lineHeight: "31px" ,textAlign: "center" }
-                                                                              ]}
-                                                             }     ,
-                                                           {
-                                                            pn: "100px" ,
-                                                               contain:{all:[
-                                                                             {html:htm("<button blue>").text("返回").click(h=> pl.pn("aaa"))} ,
-                                                                             {html:l.l=htm("<button blue>").width(60).text(">>").click(h=>l.l.text()=="广播" ? (l.l.tap ? l.l.tap() : "") : ""  )}  
-                                                                           ]}  
-                                                          }
-                                                         ]}
+                                      ty:"|" ,
+                                      all:[
+																						{pn:   "100px" , html: l.jpg = htm("<img>").width("100%").height("100%").attr("src" , "tdh.ico")} ,
+																						{
+																						 all:[
+																									 {html: "<h6>淘多惠广播机</h6>", lineHeight: "36px" , textAlign: "center" } ,
+																									 {pn: "16px" , background: "#31aafa" ,  html : l.mt = htm("<meter value=100 float=left>").width(1).height("100%")} ,
+																									 {tag: l.t=htm("<pl>") ,lineHeight: "31px" ,textAlign: "center" }
+																								 ]
+																						 }     ,
+																					  {
+																						 pn: "100px" ,
+																						 all:[
+																								  {html:htm("<button>").text("返回").click(h=> pl.pn("aaa"))} ,
+																								  {html:l.l=htm("<button>").width(60).text(">>").click(h=>l.l.text()=="广播" ? (l.l.tap ? l.l.tap() : "") : ""  )}  
+																							 ]
+																					 }
+																				 ]
                                     } ,
                                    {tag:l.aa=htm("<pl>"), html: l.al =htm('<iframe nwfaketop width="100%" >').height("100%")}
                                ]})
@@ -1418,7 +1580,7 @@ function ap(p , l){
                                                                                                               }
                                                                                                       l.mt.width(1)
                                                                                                       
-                                                                                                      animate=()=> (console.log("a",lt) , l.mt.animate({width: "100%"} , lt , ()=> q(lp , ll)))
+                                                                                                      animate=()=> (console.log("a",ttl) , l.mt.animate({width: "100%"} , ttl , ()=> q(lp , ll)))
                                                                                                      
                                                                                                     if(lp  >= tl.length) {
                                                                                                          ll+=1
